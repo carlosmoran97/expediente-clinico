@@ -378,6 +378,7 @@ class ComposerStaticInit8f8a07438a34d1bcee91781fb5874279
         'App\\Providers\\EventServiceProvider' => __DIR__ . '/../..' . '/app/Providers/EventServiceProvider.php',
         'App\\Providers\\RouteServiceProvider' => __DIR__ . '/../..' . '/app/Providers/RouteServiceProvider.php',
         'App\\Puesto' => __DIR__ . '/../..' . '/app/Puesto.php',
+        'App\\Receta' => __DIR__ . '/../..' . '/app/Receta.php',
         'App\\Servicio' => __DIR__ . '/../..' . '/app/Servicio.php',
         'App\\SignoVital' => __DIR__ . '/../..' . '/app/SignoVital.php',
         'App\\Trabajador' => __DIR__ . '/../..' . '/app/Trabajador.php',
