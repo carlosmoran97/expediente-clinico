@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class AsignacionPuesto extends Model
 {
     protected $table = 'asignacion_puesto';
-    protected $fillable = ['nombre'];
+    protected $fillable = ['salario', 'trabajador_id','puesto_id'];
     public function trabajador(){
         return $this->belongsTo('App\Trabajador', "trabajador_id");
     }
