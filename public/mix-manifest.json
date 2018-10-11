@@ -4,5 +4,6 @@
     "/css/expediente-clinico.css": "/css/expediente-clinico.css",
     "/css/panel-admin.css": "/css/panel-admin.css",
     "/css/panel-registro-consulta.css": "/css/panel-registro-consulta.css",
-    "/css/panel-superusuario.css": "/css/panel-superusuario.css"
+    "/css/panel-superusuario.css": "/css/panel-superusuario.css",
+    "/js/Login.js": "/js/Login.js"
 }

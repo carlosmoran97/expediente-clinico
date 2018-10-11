@@ -1,9 +1,11 @@
 import React from 'react';
-import { TabContent, TabPane, Nav, NavItem, NavLink, Card, Button, CardTitle, CardText, Row, Col } from 'reactstrap';
+import { TabContent, TabPane,Container, Nav, NavItem, NavLink, Card, Button, CardTitle, CardText, Row, Col } from 'reactstrap';
 import classnames from 'classnames';
 
+import FormLogin from './FormLogin'
 
-class PanelClinico extends React.Component{
+
+class Login extends React.Component{
     constructor(...props){
         super(...props)
 
@@ -12,32 +14,25 @@ class PanelClinico extends React.Component{
     render(){
         return(
         //Renderizando la navbar
-        <div class="contedor">
-       <header>
-
-           <BarraNav />
-
-       </header>
-
-       <section>
-
+        <div class="contenedor">
+    
            <Container>
         <Row>
-          <Col sm="12">
+          <Col sm="3">
               
-              <NavTabs />
+              <FormLogin />
           
           </Col>  
         </Row>
         </Container>
 
-       </section>
+       
 
 </div>
         )
     }
 }
 
-PanelClinico.propTypes ={}
-PanelClinico.defaultProps  = {}
-export default PanelClinico
+Login.propTypes ={}
+Login.defaultProps  = {}
+export default Login
