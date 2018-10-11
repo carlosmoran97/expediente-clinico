@@ -17,7 +17,8 @@ class CreateServicioTable extends Migration
             $table->increments('id');
             $table->string('servicio', 50);
             $table->string('descripcion', 256);
-            $table->$table->foreign('Especialidad_id')->references('id')->on('Especialidad');
+            $table->unsignedInteger('especialidad_id');
+            $table->foreign('especialidad_id')->references('id')->on('especialidades');
             $table->timestamps();
         });
     }
