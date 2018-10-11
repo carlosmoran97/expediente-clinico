@@ -10,4 +10,7 @@ class Clinica extends Model
     public function encargado(){
         return $this->belongsTo('App\Persona', 'persona_id');
     }
+    public function personas(){
+        return $this->hasMany('App\Persona');
+    }
 }
