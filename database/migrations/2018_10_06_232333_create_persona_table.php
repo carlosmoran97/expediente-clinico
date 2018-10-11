@@ -18,7 +18,7 @@ class CreatePersonaTable extends Migration
             $table->string('nombre', 50);
             $table->string('apellidos', 50);
             $table->date('fechaDeNacimiento');
-            $table->int('documentoDeIdentidad');
+            $table->integer('documentoDeIdentidad');
             $table->string('estadoCivil',20);
             $table->string('genero',20);
             $table->timestamps();
