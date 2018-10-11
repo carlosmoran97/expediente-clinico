@@ -13,7 +13,10 @@ class AddOfertaDeServicioToProfesionalesEnMedicina extends Migration
      */
     public function up()
     {
-        //
+        Schema::table('profesionales_en_medicina', function($table) {
+            $table->unsignedInteger('oferta_de_servicio_id');
+            $table->foreign('oferta_de_servicio_id')->references('id')->on('ofertas_de_servicio')->onDelete('cascade');
+        });
     }
 
     /**
@@ -23,6 +26,8 @@ class AddOfertaDeServicioToProfesionalesEnMedicina extends Migration
      */
     public function down()
     {
-        //
+        Schema::table('profesionales_en_medicina', function($table) {
+            $table->dropColumn('oferta_de_servicio_id');
+        });
     }
 }

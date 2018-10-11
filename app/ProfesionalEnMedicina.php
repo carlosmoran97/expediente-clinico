@@ -12,7 +12,10 @@ class ProfesionalEnMedicina extends Model
         return $this->belongsTo('App\Trabajador', "trabajador_id");
     }
     public function especialidad(){
-        return $this->belongsTo('App\Especialidad', "Especialidad_id");
+        return $this->belongsTo('App\Especialidad', "especialidad_id");
     }
 
+    public function ofertaservicio(){
+        return $this->belongsTo('App\OfertaDeServicio', "oferta_de_servicio_id");
+    }
 }
