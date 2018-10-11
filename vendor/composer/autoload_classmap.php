@@ -6,6 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'App\\AsignacionPuesto' => $baseDir . '/app/AsignacionPuesto.php',
     'App\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
     'App\\Departamento' => $baseDir . '/app/Departamento.php',
     'App\\Direccion' => $baseDir . '/app/Direccion.php',
@@ -37,6 +38,7 @@ return array(
     'App\\Puesto' => $baseDir . '/app/Puesto.php',
     'App\\Servicio' => $baseDir . '/app/Servicio.php',
     'App\\SignoVital' => $baseDir . '/app/SignoVital.php',
+    'App\\Trabajador' => $baseDir . '/app/Trabajador.php',
     'App\\TratamientoMedico' => $baseDir . '/app/TratamientoMedico.php',
     'App\\User' => $baseDir . '/app/User.php',
     'BeyondCode\\DumpServer\\DumpServerCommand' => $vendorDir . '/beyondcode/laravel-dump-server/src/DumpServerCommand.php',
