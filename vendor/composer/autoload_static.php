@@ -341,10 +341,10 @@ class ComposerStaticInit8f8a07438a34d1bcee91781fb5874279
 
     public static $classMap = array (
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
+        'App\\Departamento' => __DIR__ . '/../..' . '/app/Departamento.php',
+        'App\\Direccion' => __DIR__ . '/../..' . '/app/Direccion.php',
         'App\\Especialidad' => __DIR__ . '/../..' . '/app/Especialidad.php',
         'App\\Examen' => __DIR__ . '/../..' . '/app/Examen.php',
-        'App\\Departamento' => __DIR__ . '/../..' . '/app/Departamento.php',
-        'App\\Especialidad' => __DIR__ . '/../..' . '/app/Especialidad.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
         'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
         'App\\Http\\Controllers\\Auth\\LoginController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/LoginController.php',
@@ -360,6 +360,7 @@ class ComposerStaticInit8f8a07438a34d1bcee91781fb5874279
         'App\\Http\\Middleware\\TrimStrings' => __DIR__ . '/../..' . '/app/Http/Middleware/TrimStrings.php',
         'App\\Http\\Middleware\\TrustProxies' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustProxies.php',
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
+        'App\\Municipio' => __DIR__ . '/../..' . '/app/Municipio.php',
         'App\\Persona' => __DIR__ . '/../..' . '/app/Persona.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
@@ -367,6 +368,7 @@ class ComposerStaticInit8f8a07438a34d1bcee91781fb5874279
         'App\\Providers\\EventServiceProvider' => __DIR__ . '/../..' . '/app/Providers/EventServiceProvider.php',
         'App\\Providers\\RouteServiceProvider' => __DIR__ . '/../..' . '/app/Providers/RouteServiceProvider.php',
         'App\\Servicio' => __DIR__ . '/../..' . '/app/Servicio.php',
+        'App\\SignoVital' => __DIR__ . '/../..' . '/app/SignoVital.php',
         'App\\TratamientoMedico' => __DIR__ . '/../..' . '/app/TratamientoMedico.php',
         'App\\User' => __DIR__ . '/../..' . '/app/User.php',
         'BeyondCode\\DumpServer\\DumpServerCommand' => __DIR__ . '/..' . '/beyondcode/laravel-dump-server/src/DumpServerCommand.php',
