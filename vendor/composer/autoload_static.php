@@ -349,6 +349,8 @@ class ComposerStaticInit8f8a07438a34d1bcee91781fb5874279
         'App\\Examen' => __DIR__ . '/../..' . '/app/Examen.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
         'App\\Horario' => __DIR__ . '/../..' . '/app/Horario.php',
+        'App\\HorarioAsignacionPuesto' => __DIR__ . '/../..' . '/app/HorarioAsignacionPuesto.php',
+        'App\\HorarioDeClinica' => __DIR__ . '/../..' . '/app/HorarioDeClinica.php',
         'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
         'App\\Http\\Controllers\\Auth\\LoginController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/LoginController.php',
         'App\\Http\\Controllers\\Auth\\RegisterController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/RegisterController.php',

@@ -16,6 +16,12 @@ class CreateConsultasTable extends Migration
         Schema::create('consultas', function (Blueprint $table) {
             $table->increments('id');
             $table->timestamps();
+            $table->string('sintomatologia');
+            $table->string('diagnostico');
+            $table->unsignedInteger('profesional_en_medicina_id');
+            $table->unsignedInteger('paciente_id');
+            $table->foreign('profesional_en_medicina_id')->references('id')->on('profesionales_en_medicina')->onDelete('cascade');
+            $table->foreign('paciente_id')->references('id')->on('pacientes')->onDelete('cascade');
         });
     }
 

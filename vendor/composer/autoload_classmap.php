@@ -15,6 +15,8 @@ return array(
     'App\\Examen' => $baseDir . '/app/Examen.php',
     'App\\Exceptions\\Handler' => $baseDir . '/app/Exceptions/Handler.php',
     'App\\Horario' => $baseDir . '/app/Horario.php',
+    'App\\HorarioAsignacionPuesto' => $baseDir . '/app/HorarioAsignacionPuesto.php',
+    'App\\HorarioDeClinica' => $baseDir . '/app/HorarioDeClinica.php',
     'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => $baseDir . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
     'App\\Http\\Controllers\\Auth\\LoginController' => $baseDir . '/app/Http/Controllers/Auth/LoginController.php',
     'App\\Http\\Controllers\\Auth\\RegisterController' => $baseDir . '/app/Http/Controllers/Auth/RegisterController.php',
