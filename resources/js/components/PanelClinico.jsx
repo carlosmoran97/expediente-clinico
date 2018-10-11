@@ -14,20 +14,9 @@
 
 import React,{Component,propTypes} from 'react'
 import ReactDOM from 'react-dom'
-import {
-    Collapse,
-    Navbar,
-    NavbarToggler,
-    NavbarBrand,
-    Nav,
-    NavItem,
-    NavLink,
-    UncontrolledDropdown,
-    DropdownToggle,
-    DropdownMenu,
-    DropdownItem } from 'reactstrap';
 import BarraNav from './BarraNav'
-
+import NavTabs from './NavTabs'
+import {Container,Row, Col} from 'reactstrap';
 
 
 
@@ -41,12 +30,28 @@ class PanelClinico extends React.Component{
     render(){
         return(
         //Renderizando la navbar
+        <div class="contedor">
        <header>
-           <Nav />
+
+           <BarraNav />
 
        </header>
 
+       <section>
 
+           <Container>
+        <Row>
+          <Col sm="12">
+              
+              <NavTabs />
+          
+          </Col>  
+        </Row>
+        </Container>
+
+       </section>
+
+</div>
         )
     }
 }
