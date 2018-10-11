@@ -31,6 +31,7 @@ return array(
     'App\\Municipio' => $baseDir . '/app/Municipio.php',
     'App\\Paciente' => $baseDir . '/app/Paciente.php',
     'App\\Persona' => $baseDir . '/app/Persona.php',
+    'App\\ProfesionalEnMedicina' => $baseDir . '/app/ProfesionalEnMedicina.php',
     'App\\Providers\\AppServiceProvider' => $baseDir . '/app/Providers/AppServiceProvider.php',
     'App\\Providers\\AuthServiceProvider' => $baseDir . '/app/Providers/AuthServiceProvider.php',
     'App\\Providers\\BroadcastServiceProvider' => $baseDir . '/app/Providers/BroadcastServiceProvider.php',

@@ -365,6 +365,7 @@ class ComposerStaticInit8f8a07438a34d1bcee91781fb5874279
         'App\\Municipio' => __DIR__ . '/../..' . '/app/Municipio.php',
         'App\\Paciente' => __DIR__ . '/../..' . '/app/Paciente.php',
         'App\\Persona' => __DIR__ . '/../..' . '/app/Persona.php',
+        'App\\ProfesionalEnMedicina' => __DIR__ . '/../..' . '/app/ProfesionalEnMedicina.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
         'App\\Providers\\BroadcastServiceProvider' => __DIR__ . '/../..' . '/app/Providers/BroadcastServiceProvider.php',
