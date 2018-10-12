@@ -23,3 +23,7 @@ Route::post('/especialidad', 'EspecialidadController@store');
 Route::put('/especialidad', 'EspecialidadController@update');
 Route::delete('/especialidad', 'EspecialidadController@destroy');
 
+Route::get('/horario', 'HorarioController@index');
+Route::post('/horario', 'HorarioController@store');
+Route::put('/horario', 'HorarioController@update');
+Route::delete('/horario', 'HorarioController@destroy');

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Horario;
 
 class HorarioController extends Controller
 {
@@ -14,8 +15,8 @@ class HorarioController extends Controller
      */
     public function index()
     {
-        $horarios = Horario::all();
-        return $horarios;
+        $horario = Horario::all();
+        return $horario;
     }
 
     /**
@@ -25,7 +26,7 @@ class HorarioController extends Controller
      */
     public function create()
     {
-        //
+        
     }
 
     /**
@@ -36,7 +37,12 @@ class HorarioController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $horario = new Horario();
+        $horario->dia= $request->dia;
+        $horario->desde = $request->desde;
+        $horario->hasta= $request->hasta;
+        $horario->save();
+        return $horario;
     }
 
     /**
@@ -68,9 +74,14 @@ class HorarioController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request)
     {
-        //
+        $horario = Horario::findOrFail($request->id);
+        $horario->dia = $request->dia;
+        $horario->desde =$request->desde;
+        $horario->hasta = $request->hasta;
+        $horario->save();
+        return $horario;
     }
 
     /**
@@ -79,8 +90,9 @@ class HorarioController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy( Request  $request)
     {
-        //
+        Horario::destroy($request->id);
+      
     }
 }
