@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Departamento;
+use App\Municipio;
 
-class DepartamentoController extends Controller
+class MunicipioController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,9 +14,10 @@ class DepartamentoController extends Controller
      */
     public function index()
     {
-        //if(!$request->ajax()) return redirect('/');
-        $departamentos = Departamento::all();
-        return $departamentos;
+        $municipios = Municipio::join('departamentos', 'municipios.departamento_id', '=', 'departamentos.id')
+            ->select('municipios.id','municipios.municipio', 'departamentos.departamento')
+            ->orderBy('municipios.id', 'desc')->get();
+        return $municipios;
     }
 
     /**
@@ -26,7 +27,7 @@ class DepartamentoController extends Controller
      */
     public function create()
     {
-        
+        //
     }
 
     /**
@@ -37,10 +38,11 @@ class DepartamentoController extends Controller
      */
     public function store(Request $request)
     {
-        $departamento = new Departamento();
-        $departamento->departamento = $request->departamento;
-        $departamento->save();
-        return $departamento;
+        $municipio = new Municipio();
+        $municipio->municipio = $request->municipio;
+        $municipio->departamento_id = $request->departamento_id;
+        $municipio->save();
+        return $municipio;
     }
 
     /**
@@ -72,12 +74,9 @@ class DepartamentoController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request)
+    public function update(Request $request, $id)
     {
-        $departamento = Departamento::findOrFail($request->id);
-        $departamento->departamento = $request->departamento;
-        $departamento->save();
-        return $departamento;
+        //
     }
 
     /**
@@ -86,8 +85,8 @@ class DepartamentoController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Request $request)
+    public function destroy($id)
     {
-        Departamento::destroy($request->id);
+        //
     }
 }

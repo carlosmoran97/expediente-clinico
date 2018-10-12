@@ -17,13 +17,28 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+// Rutas de las especialidades
 
 Route::get('/especialidad', 'EspecialidadController@index');
 Route::post('/especialidad', 'EspecialidadController@store');
 Route::put('/especialidad', 'EspecialidadController@update');
 Route::delete('/especialidad', 'EspecialidadController@destroy');
 
+<<<<<<< HEAD
 Route::get('/horario', 'HorarioController@index');
 Route::post('/horario', 'HorarioController@store');
 Route::put('/horario', 'HorarioController@update');
 Route::delete('/horario', 'HorarioController@destroy');
+=======
+// Rutas de los departamentos
+Route::get('/departamento', 'DepartamentoController@index');
+Route::post('/departamento', 'DepartamentoController@store');
+Route::put('/departamento', 'DepartamentoController@update');
+Route::delete('/departamento', 'DepartamentoController@destroy');
+
+// Ruta de los municipios
+Route::get('/municipio', 'MunicipioController@index');
+Route::post('/municipio', 'MunicipioController@store');
+Route::put('/municipio', 'MunicipioController@update');
+Route::delete('/municipio', 'MunicipioController@destroy');
+>>>>>>> 8a8435a78d80809fe41d31cfa8d7e332d9bb09b5
