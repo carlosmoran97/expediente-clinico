@@ -35,3 +35,9 @@ Route::get('/municipio', 'MunicipioController@index');
 Route::post('/municipio', 'MunicipioController@store');
 Route::put('/municipio', 'MunicipioController@update');
 Route::delete('/municipio', 'MunicipioController@destroy');
+
+// Ruta de las direcciones
+Route::get('/direccion', 'DireccionController@index');
+Route::post('/direccion', 'DireccionController@store');
+Route::put('/direccion', 'DireccionController@update');
+Route::delete('/direccion', 'DireccionController@destroy');
