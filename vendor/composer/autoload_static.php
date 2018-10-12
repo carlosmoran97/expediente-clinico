@@ -373,10 +373,18 @@ class ComposerStaticInit8f8a07438a34d1bcee91781fb5874279
         'App\\Http\\Controllers\\Auth\\VerificationController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/VerificationController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'App\\Http\\Controllers\\DepartamentoController' => __DIR__ . '/../..' . '/app/Http/Controllers/DepartamentoController.php',
+<<<<<<< HEAD
         'App\\Http\\Controllers\\EspecialidadController' => __DIR__ . '/../..' . '/app/Http/Controllers/EspecialidadController.php',
         'App\\Http\\Controllers\\HorarioController' => __DIR__ . '/../..' . '/app/Http/Controllers/HorarioController.php',
         'App\\Http\\Controllers\\MunicipioController' => __DIR__ . '/../..' . '/app/Http/Controllers/MunicipioController.php',
         'App\\Http\\Controllers\\SignoVitalController' => __DIR__ . '/../..' . '/app/Http/Controllers/SignoVitalController.php',
+=======
+        'App\\Http\\Controllers\\DireccionController' => __DIR__ . '/../..' . '/app/Http/Controllers/DireccionController.php',
+        'App\\Http\\Controllers\\EspecialidadController' => __DIR__ . '/../..' . '/app/Http/Controllers/EspecialidadController.php',
+        'App\\Http\\Controllers\\HorarioController' => __DIR__ . '/../..' . '/app/Http/Controllers/HorarioController.php',
+        'App\\Http\\Controllers\\MunicipioController' => __DIR__ . '/../..' . '/app/Http/Controllers/MunicipioController.php',
+        'App\\Http\\Controllers\\PersonaController' => __DIR__ . '/../..' . '/app/Http/Controllers/PersonaController.php',
+>>>>>>> bf8b8c67cc9dd075ebc9ac6322a33b6ccb921e51
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
         'App\\Http\\Middleware\\CheckForMaintenanceMode' => __DIR__ . '/../..' . '/app/Http/Middleware/CheckForMaintenanceMode.php',

@@ -29,6 +29,7 @@ Route::get('/horario', 'HorarioController@index');
 Route::post('/horario', 'HorarioController@store');
 Route::put('/horario', 'HorarioController@update');
 Route::delete('/horario', 'HorarioController@destroy');
+
 // Rutas de los departamentos
 Route::get('/departamento', 'DepartamentoController@index');
 Route::post('/departamento', 'DepartamentoController@store');
@@ -46,3 +47,14 @@ Route::get('/signosvitales', 'SignoVitalController@index');
 Route::post('/signosvitales', 'SignoVitalController@store');
 Route::put('/signosvitales', 'SignoVitalController@update');
 Route::delete('/signosvitales', 'SignoVitalController@destroy');
+// Ruta de las direcciones
+Route::get('/direccion', 'DireccionController@index');
+Route::post('/direccion', 'DireccionController@store');
+Route::put('/direccion', 'DireccionController@update');
+Route::delete('/direccion', 'DireccionController@destroy');
+
+// Ruta de las personas
+Route::get('/persona', 'PersonaController@index');
+Route::post('/persona', 'PersonaController@store');
+Route::put('/persona', 'PersonaController@update');
+Route::delete('/persona', 'PersonaController@destroy');

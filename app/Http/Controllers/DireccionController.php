@@ -3,10 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Municipio;
-use App\Departamento;
+use App\Direccion;
 
-class MunicipioController extends Controller
+class DireccionController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,10 +14,11 @@ class MunicipioController extends Controller
      */
     public function index()
     {
-        $municipios = Municipio::join('departamentos', 'municipios.departamento_id', '=', 'departamentos.id')
-            ->select('municipios.id','municipios.municipio', 'departamentos.departamento')
-            ->orderBy('municipios.id', 'desc')->get();
-        return $municipios;
+        $direcciones = Direccion::join('municipios', 'direcciones.municipio_id', '=', 'municipios.id')
+            ->select('direcciones.id', 'direcciones.casa', 'direcciones.calle', 'direcciones.colonia', 'municipios.municipio')
+            ->orderBy('direcciones.id')
+            ->get();
+        return $direcciones;
     }
 
     /**
@@ -39,13 +39,13 @@ class MunicipioController extends Controller
      */
     public function store(Request $request)
     {
-        $municipio = new Municipio();
-        $departamento = Departamento::findOrFail($request->departamento_id);
-
-        $municipio->municipio = $request->municipio;
-        $municipio->departamento()->associate($departamento);
-        $municipio->save();
-        return $municipio;
+        $direccion = new Direccion();
+        $direccion->casa = $request->casa;
+        $direccion->calle = $request->calle;
+        $direccion->colonia = $request->colonia;
+        $direccion->municipio_id = $request->municipio_id;
+        $direccion->save();
+        return $direccion;
     }
 
     /**
@@ -77,9 +77,18 @@ class MunicipioController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request)
     {
-        //
+        $direccion = Direccion::findOrFail($request->id);
+
+        $direccion->casa = $request->casa;
+        $direccion->calle = $request->calle;
+        $direccion->colonia = $request->colonia;
+        $direccion->municipio_id = $request->municipio_id;
+
+        $direccion->save();
+
+        return $direccion;
     }
 
     /**
@@ -88,8 +97,8 @@ class MunicipioController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Request $request)
     {
-        //
+        Direccion::destroy($request->id);
     }
 }
