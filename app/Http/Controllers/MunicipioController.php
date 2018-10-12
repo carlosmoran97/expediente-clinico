@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Municipio;
+use App\Departamento;
 
 class MunicipioController extends Controller
 {
@@ -39,8 +40,10 @@ class MunicipioController extends Controller
     public function store(Request $request)
     {
         $municipio = new Municipio();
+        $departamento = Departamento::findOrFail($request->departamento_id);
+
         $municipio->municipio = $request->municipio;
-        $municipio->departamento_id = $request->departamento_id;
+        $municipio->departamento()->associate($departamento);
         $municipio->save();
         return $municipio;
     }
