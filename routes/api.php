@@ -22,3 +22,4 @@ Route::get('/especialidad', 'EspecialidadController@index');
 Route::post('/especialidad', 'EspecialidadController@store');
 Route::put('/especialidad', 'EspecialidadController@update');
 Route::delete('/especialidad', 'EspecialidadController@destroy');
+

@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Especialidad;
+use App\Departamento;
 
-class EspecialidadController extends Controller
+class DepartamentoController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,10 +14,10 @@ class EspecialidadController extends Controller
      */
     public function index()
     {
-        $especialidades = Especialidad::all();
-        return $especialidades;
+        $departamentos = Departamento::all();
+        return $departamentos;
     }
-    
+
     /**
      * Show the form for creating a new resource.
      *
@@ -25,7 +25,7 @@ class EspecialidadController extends Controller
      */
     public function create()
     {
-        //
+        
     }
 
     /**
@@ -36,10 +36,10 @@ class EspecialidadController extends Controller
      */
     public function store(Request $request)
     {
-        $especialidad = new Especialidad();
-        $especialidad->especialidad = $request->especialidad;
-        $especialidad->save();
-        return $especialidad;
+        $departamento = new Departamento();
+        $departamento->departamento = $request->$departamento;
+        $departamento->save();
+        return $departamento;
     }
 
     /**
@@ -73,10 +73,8 @@ class EspecialidadController extends Controller
      */
     public function update(Request $request)
     {
-        $especialidad = Especialidad::findOrFail($request->id);
-        $especialidad->especialidad = $request->especialidad;
-        $especialidad->save();
-        return $especialidad;
+        $departamento = Departamento::findOrFail($request->id);
+        $departamento->departamento = $request->departamento;
     }
 
     /**
@@ -85,8 +83,8 @@ class EspecialidadController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Request $request)
+    public function destroy($id)
     {
-        Especialidad::destroy($request->id);
+        //
     }
 }
