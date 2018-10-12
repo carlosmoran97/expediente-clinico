@@ -58,3 +58,10 @@ Route::get('/persona', 'PersonaController@index');
 Route::post('/persona', 'PersonaController@store');
 Route::put('/persona', 'PersonaController@update');
 Route::delete('/persona', 'PersonaController@destroy');
+
+// Ruta de las direcciones
+
+Route::get('/clinica', 'ClinicaController@index');
+Route::post('/clinica','ClinicaController@store');
+Route::put('/clinica', 'Clinicacontroller@update');
+Route::delete('/clinica', 'ClinicaController@destroy');

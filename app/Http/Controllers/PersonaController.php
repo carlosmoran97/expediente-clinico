@@ -90,7 +90,7 @@ class PersonaController extends Controller
         // obteniendo el objeto persona
         $persona = Persona::findOrFail($request->id);
         // obteniendo las entidades con las que se relaciona
-        $direccion = Persona::findOrFail($request->direccion_id);
+        $direccion = Direccion::findOrFail($request->direccion_id);
         $clinica = Clinica::findOrFail($request->clinica_id);
 
         // asignandole valores a sus atributos
@@ -113,6 +113,6 @@ class PersonaController extends Controller
      */
     public function destroy(Request $request)
     {
-        Persona::destro($request->id);
+        Persona::destroy($request->id);
     }
 }

@@ -14,8 +14,9 @@ class ClinicaController extends Controller
      */
     public function index()
     {
-        $clinica =Clinica::all();
-        
+        $clinica = Clinica::join('persona', 'clinica.persona_id', '=','persona.id' and 'direcciones', 'clinica.direcion_id', '=','direcion_id' )
+            ->select('clinica.id','clinica.numero_registro','clinica.nombre','clinica.telefono','clinica.correo_elctronico','clinica.persona-id','clinica.direccin_id', 'persona.persona', 'direcion.direccion')
+            ->orderBy('clinica.id', 'desc')->get();
         return $clinica;
     }
 
@@ -37,7 +38,18 @@ class ClinicaController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $clinica = new Clinica();
+        $persona = Persona::findOrFail($request->persona_id);
+        $direccion = Direccion::findOrFail($request->direccion_id);
+
+        $clinica->numero_registro = $request->numero_registro;
+        $clinica->nombre = $request->nombre;
+        $clinica->telefono = $request->telefono;
+        $clinica->correo_electronico = $request->correo_electronico;
+        $clinica->persona()->associate($persona);
+        $clinica->direcion()->associate($direccion);
+        $clinica->save();
+        return $clinica;
     }
 
     /**
@@ -71,7 +83,18 @@ class ClinicaController extends Controller
      */
     public function update(Request $request, $id)
     {
-        
+         $clinica = Clinica::findOrFail($request->clinica_id);
+         $direccion = Direccion::findOrFail($request->direccion_id);
+         $persona = Persona::findOrFail($request->id);
+
+         $clinica->numero_registro = $request->numero_registro;
+         $clinica->nombre = $request->nombre;
+         $clinica->telefono = $request->telefono;
+         $clinica->correo_electronico = $request->correo_electronico;
+         $clinica->persona()->associate($persona);
+         $clinica->direcion()->associate($direccion);
+         $clinica->save();
+         return $clinica;
     }
 
     /**
@@ -80,7 +103,7 @@ class ClinicaController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Request $request)
     {
         Clinica::destroy($resques->id);
     }
