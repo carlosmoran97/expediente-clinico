@@ -24,12 +24,11 @@ Route::post('/especialidad', 'EspecialidadController@store');
 Route::put('/especialidad', 'EspecialidadController@update');
 Route::delete('/especialidad', 'EspecialidadController@destroy');
 
-<<<<<<< HEAD
+//rutas de los horarios
 Route::get('/horario', 'HorarioController@index');
 Route::post('/horario', 'HorarioController@store');
 Route::put('/horario', 'HorarioController@update');
 Route::delete('/horario', 'HorarioController@destroy');
-=======
 // Rutas de los departamentos
 Route::get('/departamento', 'DepartamentoController@index');
 Route::post('/departamento', 'DepartamentoController@store');
@@ -41,4 +40,9 @@ Route::get('/municipio', 'MunicipioController@index');
 Route::post('/municipio', 'MunicipioController@store');
 Route::put('/municipio', 'MunicipioController@update');
 Route::delete('/municipio', 'MunicipioController@destroy');
->>>>>>> 8a8435a78d80809fe41d31cfa8d7e332d9bb09b5
+
+//Rutas de los signisvitales
+Route::get('/signosvitales', 'SignoVitalController@index');
+Route::post('/signosvitales', 'SignoVitalController@store');
+Route::put('/signosvitales', 'SignoVitalController@update');
+Route::delete('/signosvitales', 'SignoVitalController@destroy');
