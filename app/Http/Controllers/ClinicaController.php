@@ -4,7 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-
+use App\Clinica;
+use App\Persona;
+use App\Direccion;
 class ClinicaController extends Controller
 {
     /**
@@ -14,10 +16,11 @@ class ClinicaController extends Controller
      */
     public function index()
     {
-        $clinica = Clinica::join('persona', 'clinica.persona_id', '=','persona.id' and 'direcciones', 'clinica.direcion_id', '=','direcion_id' )
-            ->select('clinica.id','clinica.numero_registro','clinica.nombre','clinica.telefono','clinica.correo_elctronico','clinica.persona-id','clinica.direccin_id', 'persona.persona', 'direcion.direccion')
-            ->orderBy('clinica.id', 'desc')->get();
-        return $clinica;
+        $clinicas = Clinica::join('persona', 'clinicas.persona_id', '=','persona.id')
+           -> join('direcciones', 'clinicas.direccion_id', '=','direcciones.id')
+            ->select('clinicas.id','clinicas.numero_registro','clinicas.nombre','clinicas.telefono','clinicas.correo_electronico','clinicas.persona_id','clinicas.direccion_id', 'persona.id', 'direcciones.id')
+            ->orderBy('clinicas.id', 'desc')->get();  
+        return $clinicas;
     }
 
     /**
@@ -46,7 +49,7 @@ class ClinicaController extends Controller
         $clinica->nombre = $request->nombre;
         $clinica->telefono = $request->telefono;
         $clinica->correo_electronico = $request->correo_electronico;
-        $clinica->persona()->associate($persona);
+        $clinica->encargado()->associate($persona);
         $clinica->direcion()->associate($direccion);
         $clinica->save();
         return $clinica;
@@ -91,7 +94,7 @@ class ClinicaController extends Controller
          $clinica->nombre = $request->nombre;
          $clinica->telefono = $request->telefono;
          $clinica->correo_electronico = $request->correo_electronico;
-         $clinica->persona()->associate($persona);
+         $clinica->encargado()->associate($persona);
          $clinica->direcion()->associate($direccion);
          $clinica->save();
          return $clinica;
