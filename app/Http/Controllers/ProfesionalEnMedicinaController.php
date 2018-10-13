@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Direccion;
+use App\ProfesionalEnMedicina;
 
-class DireccionController extends Controller
+class ProfesionalEnMedicinaController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,8 +14,8 @@ class DireccionController extends Controller
      */
     public function index()
     {
-        $direcciones = Direccion::with('municipio')->get();
-        return $direcciones;
+        $profesionales_en_medicina = ProfesionalEnMedicina::all();
+        return $profesionales_en_medicina;
     }
 
     /**
@@ -36,13 +36,20 @@ class DireccionController extends Controller
      */
     public function store(Request $request)
     {
-        $direccion = new Direccion();
-        $direccion->casa = $request->casa;
-        $direccion->calle = $request->calle;
-        $direccion->colonia = $request->colonia;
-        $direccion->municipio_id = $request->municipio_id;
-        $direccion->save();
-        return $direccion;
+        // Creando un profesional en el area de medicina
+        $profesional_en_medicina = new ProfesionalEnMedicina();
+
+        // Obteneindo las entidades con las que se relaciona
+        $trabajador = App\Trabajador::findOrFail($request->trabajador_id);
+        $especialidad = App\Especialidad::findOrFail($request->especialidad_id);
+        $ofertaservicio = App\OfertaDeServicio::findOrFail($request->oferta_de_servicio_id);
+
+        $profesional_en_medicina->JVPM = $request->JVPM;
+
+        // guardando en la BD
+        $profesional_en_medicina->save();
+
+        return $profesional_en_medicina;
     }
 
     /**
@@ -76,16 +83,19 @@ class DireccionController extends Controller
      */
     public function update(Request $request)
     {
-        $direccion = Direccion::findOrFail($request->id);
+        $profesional_en_medicina = ProfesionalEnMedicina::findOrFail($request->id);
 
-        $direccion->casa = $request->casa;
-        $direccion->calle = $request->calle;
-        $direccion->colonia = $request->colonia;
-        $direccion->municipio_id = $request->municipio_id;
+        // Obteneindo las entidades con las que se relaciona
+        $trabajador = App\Trabajador::findOrFail($request->trabajador_id);
+        $especialidad = App\Especialidad::findOrFail($request->especialidad_id);
+        $ofertaservicio = App\OfertaDeServicio::findOrFail($request->oferta_de_servicio_id);
 
-        $direccion->save();
+        $profesional_en_medicina->JVPM = $request->JVPM;
 
-        return $direccion;
+        // guardando en la BD
+        $profesional_en_medicina->save();
+
+        return $profesional_en_medicina;
     }
 
     /**
@@ -96,6 +106,6 @@ class DireccionController extends Controller
      */
     public function destroy(Request $request)
     {
-        Direccion::destroy($request->id);
+        ProfesionalEnMedicina::destroy($request->id);
     }
 }
