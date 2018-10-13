@@ -94,3 +94,15 @@ Route::get('/trabajador', 'TrabajadorController@index');
 Route::post('/trabajador','TrabajadorController@store');
 Route::put('/trabajador', 'TrabajadoresController@update');
 Route::delete('/trabajador', 'TrabajadoresController@destroy');
+
+
+// Rutas de horario de clinica
+Route::get('/horarioclinica', 'HorarioDeClinicaController@index');
+Route::post('/horarioclinica','HorarioDeClinicaController@store');
+Route::put('/horarioclinica', 'HorarioDeClinicaController@update');
+
+// Rutas de servicios
+Route::get('/servicios', 'ServicioController@index');
+Route::post('/servicios','ServicioController@store');
+Route::put('/servicios', 'ServicioController@update');
+Route::delete('/servicios', 'servicioController@destroy');

@@ -4,11 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\HorarioDeClinica;
-use App\Clinica;
-use App\Horario;
+use App\Servicio;
+use App\Especialidad;
 
-class HorarioDeClinicaController extends Controller
+class ServicioController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,11 +16,10 @@ class HorarioDeClinicaController extends Controller
      */
     public function index()
     {
-        $horarioDeClinica=HorarioDeClinica::join('horario', 'horarios_de_clinica.horario_id',  '=' , 'horario.id')
-        -> join('clinicas', 'horarios_de_clinica.clinica_id' , '=', 'clinicas.id')
-        ->select( 'horarios_de_clinica.id','horarios_de_clinica.horario_id', 'horarios_de_clinica.clinica_id','horario.id','clinicas.id')
-        ->orderBy('horarios_de_clinica.id', 'desc')->get(); 
-       return $horarioDeClinica;
+        $servicios= Servicio::join('especialidades','servicio.especialidad_id','=', 'especialidades.id')
+        ->select('servicio.id','servicio.servicio','servicio.descripcion','servicio.especialidad_id','especialidades.id')
+        ->orderBy('servicio.id','desc')->get();
+        return $servicios;
     }
 
     /**
@@ -42,13 +40,11 @@ class HorarioDeClinicaController extends Controller
      */
     public function store(Request $request)
     {
-        $horarioDeClinica = new HorarioDeClinica();
-        $clinica = Clinica::findOrFail( $request->clinica_id);
-        $horario= Horario::findOrFail($request->horario_id);
-        
-        $horarioDeClinica->clinica()->associate($clinica);
-        $horarioDeClinica->horario()->associate($horario);
-        return $consulta;
+        $servicios = new Servicio();
+        $especialidad = Especlalidad::FindOrFail($request->especialidad_id);
+        $servicios->servicio = $requers->nombre;
+        $servicio->descripcion = $request->descripcion;
+        $servicio->especialidad()->associate($especialidad);
     }
 
     /**
@@ -70,7 +66,7 @@ class HorarioDeClinicaController extends Controller
      */
     public function edit($id)
     {
-    
+        //
     }
 
     /**
@@ -82,12 +78,10 @@ class HorarioDeClinicaController extends Controller
      */
     public function update(Request $request)
     {
-        $clinica = Clinica::findOrFail( $request->clinica_id);
-        $horario= Horario::findOrFail($request->horario_id);
-        
-        $horarioDeClinica->clinica_id()->associate($clinica);
-        $horarioDeClinica->horario_id()->associate(horario);
-        return $consulta;
+        $especialidad = Especlalidad::FindOrFail($request->especialidad_id);
+        $servicios->servicio= $requers->nombre;
+        $servicio->descripcion = $request->descripcion;
+        $servicio->especialidad()->associate($especialidad);
     }
 
     /**
@@ -96,8 +90,8 @@ class HorarioDeClinicaController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Request $request)
+    public function destroy(Request $reques)
     {
-        HorarioDeClinica::destroy($request->id);
+        Servicios::destroy($request->id);
     }
 }
