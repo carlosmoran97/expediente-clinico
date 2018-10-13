@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Paciente;
-
+use App\Persona;
 class PacienteController extends Controller
 {
     /**
@@ -14,7 +14,8 @@ class PacienteController extends Controller
      */
     public function index()
     {
-        
+        $pacientes = Paciente::all();
+        return $pacientes;
     }
 
     /**
@@ -35,7 +36,24 @@ class PacienteController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $paciente = new Paciente();
+        $paciente->numero_de_expediente = $request->numero_de_expediente;
+        if(isset($request->profesion)){
+            $paciente->profesion = $request->profesion;
+        }
+        else if(isset($request->oficio)){
+            $paciente->oficio = $request->oficio;
+        }
+        $paciente->nombre_del_padre = $request->nombre_del_padre;
+        $paciente->nombre_de_la_madre = $request->nombre_de_la_madre;
+        $paciente->nombre_de_conyugue = $request->nombre_de_conyugue;
+        // Obteniendo la persona
+        $persona = Persona::findOrFail($request->persona_id);
+        $paciente->persona()->associate($persona);
+
+        // Guardandolo en la base de datos
+        $paciente->save();
+        return $paciente;
     }
 
     /**
@@ -67,9 +85,26 @@ class PacienteController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request)
     {
-        //
+        $paciente = Paciente::findOrFail($request->id);
+        $paciente->numero_de_expediente = $request->numero_de_expediente;
+        if(isset($request->profesion)){
+            $paciente->profesion = $request->profesion;
+        }
+        else if(isset($request->oficio)){
+            $paciente->oficio = $request->oficio;
+        }
+        $paciente->nombre_del_padre = $request->nombre_del_padre;
+        $paciente->nombre_de_la_madre = $request->nombre_de_la_madre;
+        $paciente->nombre_de_conyugue = $request->nombre_de_conyugue;
+        // Obteniendo la persona
+        $persona = Persona::findOrFail($request->persona_id);
+        $paciente->persona()->associate($persona);
+
+        // Guardandolo en la base de datos
+        $paciente->save();
+        return $paciente;
     }
 
     /**
@@ -78,8 +113,8 @@ class PacienteController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Request $request)
     {
-        //
+        Paciente::destroy($request->id);
     }
 }
