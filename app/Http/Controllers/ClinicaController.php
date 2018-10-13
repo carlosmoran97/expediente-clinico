@@ -50,7 +50,7 @@ class ClinicaController extends Controller
         $clinica->telefono = $request->telefono;
         $clinica->correo_electronico = $request->correo_electronico;
         $clinica->encargado()->associate($persona);
-        $clinica->direcion()->associate($direccion);
+        $clinica->direccion()->associate($direccion);
         $clinica->save();
         return $clinica;
     }
