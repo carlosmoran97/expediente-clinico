@@ -102,6 +102,9 @@ Route::put('/rol', 'RolController@update');
 Route::delete('/rol', 'RolController@destroy');
 
 Route::get('/user', 'UserController@index');
+Route::post('/user','UserController@store');
+Route::put('/user', 'UserController@update');
+Route::delete('/user', 'UserController@destroy');
 
 // Rutas de horario de clinica
 Route::get('/horarioclinica', 'HorarioDeClinicaController@index');

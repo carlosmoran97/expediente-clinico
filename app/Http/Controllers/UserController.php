@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use App\User;
 
 class UserController extends Controller
@@ -19,8 +20,10 @@ class UserController extends Controller
             ->join('roles', 'users.rol_id','=', 'roles.id')
             ->join('direcciones', 'persona.direccion_id', '=', 'direcciones.id')
             ->join('municipios', 'direcciones.municipio_id', '=', 'municipios.id')
-            ->join('departamentos', 'municipio.departamento_id', '=', 'departamentos.id')
-            ->select('users.id', 'persona.nombre', 'persona.documentoDeIdentidad', 'direcciones.casa', 'direcciones.calle', 'municipios.municipio', 'departamentos.departamento');
+            ->join('departamentos', 'municipios.departamento_id', '=', 'departamentos.id')
+            ->select('users.id', 'persona.nombre','persona.apellidos' ,'persona.documentoDeIdentidad', 'direcciones.casa', 'direcciones.calle', 'municipios.municipio', 'departamentos.departamento', 'persona.fechaDeNacimiento', 'persona.estadoCivil', 'persona.genero', 'persona.clinica_id', 'users.usuario', 'users.password', 'roles.nombre as rol')
+            ->orderBy('users.id', 'desc')
+            ->get();
         return $users;
     }
 
@@ -42,7 +45,25 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        try{
+            DB::beginTransaction();
+            $persona = App\Persona::findOrFail($request->persona_id);
+            $rol = App\Rol::findOrFail($request->rol_id);
+
+            $user = new User();
+            $user->usuario = $request->usuario;
+            $user->password = bcrypt($request->password);
+            $user->rol()->associate($rol);
+            $user->persona()->associate($persona);
+
+            $user->save();
+            
+            DB::commit();
+
+            return $user;
+        }catch(Exception $e){
+            DB::rollBack();
+        }
     }
 
     /**
@@ -76,7 +97,25 @@ class UserController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        try{
+            DB::beginTransaction();
+            $persona = App\Persona::findOrFail($request->persona_id);
+            $rol = App\Rol::findOrFail($request->rol_id);
+
+            $user = User::findOrFail($request->id);
+            $user->usuario = $request->usuario;
+            $user->password = bcrypt($request->password);
+            $user->rol()->associate($rol);
+            $user->persona()->associate($persona);
+
+            $user->save();
+            
+            DB::commit();
+            
+            return $user;
+        }catch(Exception $e){
+            DB::rollBack();
+        }
     }
 
     /**
@@ -85,8 +124,8 @@ class UserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Request $request)
     {
-        //
+        User::destroy($request->id);
     }
 }

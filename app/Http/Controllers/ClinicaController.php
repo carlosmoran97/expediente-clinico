@@ -44,7 +44,7 @@ class ClinicaController extends Controller
         $clinica = new Clinica();
         $persona = Persona::findOrFail($request->persona_id);
         $direccion = Direccion::findOrFail($request->direccion_id);
-
+        
         $clinica->numero_registro = $request->numero_registro;
         $clinica->nombre = $request->nombre;
         $clinica->telefono = $request->telefono;
