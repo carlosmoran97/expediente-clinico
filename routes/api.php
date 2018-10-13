@@ -94,3 +94,11 @@ Route::get('/trabajador', 'TrabajadorController@index');
 Route::post('/trabajador','TrabajadorController@store');
 Route::put('/trabajador', 'TrabajadoresController@update');
 Route::delete('/trabajador', 'TrabajadoresController@destroy');
+
+// Rutas de los roles
+Route::get('/rol', 'RolController@index');
+Route::post('/rol','RolController@store');
+Route::put('/rol', 'RolController@update');
+Route::delete('/rol', 'RolController@destroy');
+
+Route::get('/user', 'UserController@index');

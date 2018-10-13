@@ -14,4 +14,7 @@ class Persona extends Model
     public function clinica(){
         return $this->belongsTo('App\Clinica', 'clinica_id');
     }
+    public function user(){
+        return $this->hasOne('App\User');
+    }
 }
