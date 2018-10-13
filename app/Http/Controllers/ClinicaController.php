@@ -16,11 +16,11 @@ class ClinicaController extends Controller
      */
     public function index()
     {
-        $clinicas = Clinica::join('persona', 'clinicas.persona_id', '=','persona.id')
+        $clinica = Clinica::join('persona', 'clinicas.persona_id', '=','persona.id')
            -> join('direcciones', 'clinicas.direccion_id', '=','direcciones.id')
             ->select('clinicas.id','clinicas.numero_registro','clinicas.nombre','clinicas.telefono','clinicas.correo_electronico','clinicas.persona_id','clinicas.direccion_id', 'persona.id', 'direcciones.id')
             ->orderBy('clinicas.id', 'desc')->get();  
-        return $clinicas;
+        return $clinica;
     }
 
     /**
@@ -84,7 +84,7 @@ class ClinicaController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request)
     {
          $clinica = Clinica::findOrFail($request->clinica_id);
          $direccion = Direccion::findOrFail($request->direccion_id);

@@ -59,7 +59,7 @@ Route::post('/persona', 'PersonaController@store');
 Route::put('/persona', 'PersonaController@update');
 Route::delete('/persona', 'PersonaController@destroy');
 
-// Ruta de las direcciones
+// Ruta de las direcciones de clinica
 
 Route::get('/clinica', 'ClinicaController@index');
 Route::post('/clinica','ClinicaController@store');
@@ -77,3 +77,20 @@ Route::get('/pem', 'ProfesionalEnMedicinaController@index');
 Route::post('/pem','ProfesionalEnMedicinaController@store');
 Route::put('/pem', 'ProfesionalEnMedicinaController@update');
 Route::delete('/pem', 'ProfesionalEnMedicinaController@destroy');
+// Rutas de los signos vitales
+Route::get('/signosvitales', 'TomaDeSignoVitalController@index');
+Route::post('/signosvitales','TomaDesignoVitalController@store');
+Route::put('/signosvitales', 'TomaDeSignoVitalController@update');
+Route::delete('/signosvitales', 'TomaDeSignoVitalController@destroy');
+
+// Rutas de  consulta
+Route::get('/consulta', 'ConsultaController@index');
+Route::post('/consulta','ConsultaController@store');
+Route::put('/consulta', 'ConsultaController@update');
+Route::delete('/consulta', 'ConsultaController@destroy');
+
+// Rutas de trabajadores
+Route::get('/trabajador', 'TrabajadorController@index');
+Route::post('/trabajador','TrabajadorController@store');
+Route::put('/trabajador', 'TrabajadoresController@update');
+Route::delete('/trabajador', 'TrabajadoresController@destroy');
