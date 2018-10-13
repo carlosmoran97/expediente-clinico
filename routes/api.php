@@ -95,6 +95,7 @@ Route::post('/trabajador','TrabajadorController@store');
 Route::put('/trabajador', 'TrabajadoresController@update');
 Route::delete('/trabajador', 'TrabajadoresController@destroy');
 
+<<<<<<< HEAD
 // Rutas de los roles
 Route::get('/rol', 'RolController@index');
 Route::post('/rol','RolController@store');
@@ -102,3 +103,16 @@ Route::put('/rol', 'RolController@update');
 Route::delete('/rol', 'RolController@destroy');
 
 Route::get('/user', 'UserController@index');
+=======
+
+// Rutas de horario de clinica
+Route::get('/horarioclinica', 'HorarioDeClinicaController@index');
+Route::post('/horarioclinica','HorarioDeClinicaController@store');
+Route::put('/horarioclinica', 'HorarioDeClinicaController@update');
+
+// Rutas de servicios
+Route::get('/servicios', 'ServicioController@index');
+Route::post('/servicios','ServicioController@store');
+Route::put('/servicios', 'ServicioController@update');
+Route::delete('/servicios', 'servicioController@destroy');
+>>>>>>> 304f1d57caaf2da1b52f8961e18fe58156e8b737
