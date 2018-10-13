@@ -509,16 +509,16 @@ if (false) {
 
 "use strict";
 /* unused harmony export Alert */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return Container; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "u", function() { return Row; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return Col; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "r", function() { return Navbar; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "s", function() { return NavbarBrand; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "t", function() { return NavbarToggler; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "o", function() { return Nav; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "p", function() { return NavItem; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return Container; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "r", function() { return Row; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return Col; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "o", function() { return Navbar; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "p", function() { return NavbarBrand; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "q", function() { return NavbarToggler; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "l", function() { return Nav; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "m", function() { return NavItem; });
 /* unused harmony export NavDropdown */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "q", function() { return NavLink; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "n", function() { return NavLink; });
 /* unused harmony export Breadcrumb */
 /* unused harmony export BreadcrumbItem */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Button; });
@@ -526,12 +526,12 @@ if (false) {
 /* unused harmony export ButtonGroup */
 /* unused harmony export ButtonToolbar */
 /* unused harmony export Dropdown */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return DropdownItem; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "i", function() { return DropdownMenu; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "j", function() { return DropdownToggle; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return DropdownItem; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return DropdownMenu; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return DropdownToggle; });
 /* unused harmony export Fade */
 /* unused harmony export Badge */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return Card; });
+/* unused harmony export Card */
 /* unused harmony export CardLink */
 /* unused harmony export CardGroup */
 /* unused harmony export CardDeck */
@@ -549,8 +549,8 @@ if (false) {
 /* unused harmony export CarouselIndicators */
 /* unused harmony export CarouselCaption */
 /* unused harmony export CardSubtitle */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return CardText; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return CardTitle; });
+/* unused harmony export CardText */
+/* unused harmony export CardTitle */
 /* unused harmony export Popover */
 /* unused harmony export PopoverContent */
 /* unused harmony export PopoverBody */
@@ -566,33 +566,33 @@ if (false) {
 /* unused harmony export Tooltip */
 /* unused harmony export Table */
 /* unused harmony export ListGroup */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "k", function() { return Form; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return Form; });
 /* unused harmony export FormFeedback */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "l", function() { return FormGroup; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "i", function() { return FormGroup; });
 /* unused harmony export FormText */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "m", function() { return Input; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "j", function() { return Input; });
 /* unused harmony export InputGroup */
 /* unused harmony export InputGroupAddon */
 /* unused harmony export InputGroupButton */
 /* unused harmony export InputGroupButtonDropdown */
 /* unused harmony export InputGroupText */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "n", function() { return Label; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "k", function() { return Label; });
 /* unused harmony export CustomInput */
 /* unused harmony export Media */
 /* unused harmony export Pagination */
 /* unused harmony export PaginationItem */
 /* unused harmony export PaginationLink */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "v", function() { return TabContent; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "w", function() { return TabPane; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "s", function() { return TabContent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "t", function() { return TabPane; });
 /* unused harmony export Jumbotron */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return Collapse; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return Collapse; });
 /* unused harmony export ListGroupItem */
 /* unused harmony export ListGroupItemText */
 /* unused harmony export ListGroupItemHeading */
 /* unused harmony export UncontrolledAlert */
 /* unused harmony export UncontrolledButtonDropdown */
 /* unused harmony export UncontrolledCollapse */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "x", function() { return UncontrolledDropdown; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "u", function() { return UncontrolledDropdown; });
 /* unused harmony export UncontrolledNavDropdown */
 /* unused harmony export UncontrolledTooltip */
 /* unused harmony export Util */
@@ -33365,13 +33365,13 @@ var App = function (_React$Component) {
                     'section',
                     null,
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        __WEBPACK_IMPORTED_MODULE_3_reactstrap__["g" /* Container */],
+                        __WEBPACK_IMPORTED_MODULE_3_reactstrap__["d" /* Container */],
                         null,
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            __WEBPACK_IMPORTED_MODULE_3_reactstrap__["u" /* Row */],
+                            __WEBPACK_IMPORTED_MODULE_3_reactstrap__["r" /* Row */],
                             null,
                             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                __WEBPACK_IMPORTED_MODULE_3_reactstrap__["e" /* Col */],
+                                __WEBPACK_IMPORTED_MODULE_3_reactstrap__["b" /* Col */],
                                 { sm: '12' },
                                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5__NavTabs__["a" /* default */], null)
                             )
@@ -35394,33 +35394,33 @@ var Example = function (_React$Component) {
         'div',
         null,
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          __WEBPACK_IMPORTED_MODULE_1_reactstrap__["r" /* Navbar */],
+          __WEBPACK_IMPORTED_MODULE_1_reactstrap__["o" /* Navbar */],
           { color: 'light', light: true, expand: 'md' },
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            __WEBPACK_IMPORTED_MODULE_1_reactstrap__["s" /* NavbarBrand */],
+            __WEBPACK_IMPORTED_MODULE_1_reactstrap__["p" /* NavbarBrand */],
             { href: '/' },
             'SOFTCLINIC'
           ),
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["t" /* NavbarToggler */], { onClick: this.toggle }),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["q" /* NavbarToggler */], { onClick: this.toggle }),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            __WEBPACK_IMPORTED_MODULE_1_reactstrap__["f" /* Collapse */],
+            __WEBPACK_IMPORTED_MODULE_1_reactstrap__["c" /* Collapse */],
             { isOpen: this.state.isOpen, navbar: true },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              __WEBPACK_IMPORTED_MODULE_1_reactstrap__["o" /* Nav */],
+              __WEBPACK_IMPORTED_MODULE_1_reactstrap__["l" /* Nav */],
               { className: 'ml-auto', navbar: true },
               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                __WEBPACK_IMPORTED_MODULE_1_reactstrap__["x" /* UncontrolledDropdown */],
+                __WEBPACK_IMPORTED_MODULE_1_reactstrap__["u" /* UncontrolledDropdown */],
                 { nav: true, inNavbar: true },
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  __WEBPACK_IMPORTED_MODULE_1_reactstrap__["j" /* DropdownToggle */],
+                  __WEBPACK_IMPORTED_MODULE_1_reactstrap__["g" /* DropdownToggle */],
                   { nav: true, caret: true },
                   'Usuario'
                 ),
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  __WEBPACK_IMPORTED_MODULE_1_reactstrap__["i" /* DropdownMenu */],
+                  __WEBPACK_IMPORTED_MODULE_1_reactstrap__["f" /* DropdownMenu */],
                   { right: true },
                   __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    __WEBPACK_IMPORTED_MODULE_1_reactstrap__["h" /* DropdownItem */],
+                    __WEBPACK_IMPORTED_MODULE_1_reactstrap__["e" /* DropdownItem */],
                     null,
                     'Cerrar Sesion'
                   )
@@ -35449,6 +35449,8 @@ var Example = function (_React$Component) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_classnames__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_classnames___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_classnames__);
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -35493,13 +35495,13 @@ var Example = function (_React$Component) {
         'div',
         null,
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          __WEBPACK_IMPORTED_MODULE_1_reactstrap__["o" /* Nav */],
+          __WEBPACK_IMPORTED_MODULE_1_reactstrap__["l" /* Nav */],
           { tabs: true },
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            __WEBPACK_IMPORTED_MODULE_1_reactstrap__["p" /* NavItem */],
+            __WEBPACK_IMPORTED_MODULE_1_reactstrap__["m" /* NavItem */],
             null,
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              __WEBPACK_IMPORTED_MODULE_1_reactstrap__["q" /* NavLink */],
+              __WEBPACK_IMPORTED_MODULE_1_reactstrap__["n" /* NavLink */],
               {
                 className: __WEBPACK_IMPORTED_MODULE_2_classnames___default()({ active: this.state.activeTab === '1' }),
                 onClick: function onClick() {
@@ -35510,10 +35512,10 @@ var Example = function (_React$Component) {
             )
           ),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            __WEBPACK_IMPORTED_MODULE_1_reactstrap__["p" /* NavItem */],
+            __WEBPACK_IMPORTED_MODULE_1_reactstrap__["m" /* NavItem */],
             null,
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              __WEBPACK_IMPORTED_MODULE_1_reactstrap__["q" /* NavLink */],
+              __WEBPACK_IMPORTED_MODULE_1_reactstrap__["n" /* NavLink */],
               {
                 className: __WEBPACK_IMPORTED_MODULE_2_classnames___default()({ active: this.state.activeTab === '2' }),
                 onClick: function onClick() {
@@ -35524,10 +35526,10 @@ var Example = function (_React$Component) {
             )
           ),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            __WEBPACK_IMPORTED_MODULE_1_reactstrap__["p" /* NavItem */],
+            __WEBPACK_IMPORTED_MODULE_1_reactstrap__["m" /* NavItem */],
             null,
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              __WEBPACK_IMPORTED_MODULE_1_reactstrap__["q" /* NavLink */],
+              __WEBPACK_IMPORTED_MODULE_1_reactstrap__["n" /* NavLink */],
               {
                 className: __WEBPACK_IMPORTED_MODULE_2_classnames___default()({ active: this.state.activeTab === '3' }),
                 onClick: function onClick() {
@@ -35538,10 +35540,10 @@ var Example = function (_React$Component) {
             )
           ),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            __WEBPACK_IMPORTED_MODULE_1_reactstrap__["p" /* NavItem */],
+            __WEBPACK_IMPORTED_MODULE_1_reactstrap__["m" /* NavItem */],
             null,
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              __WEBPACK_IMPORTED_MODULE_1_reactstrap__["q" /* NavLink */],
+              __WEBPACK_IMPORTED_MODULE_1_reactstrap__["n" /* NavLink */],
               {
                 className: __WEBPACK_IMPORTED_MODULE_2_classnames___default()({ active: this.state.activeTab === '4' }),
                 onClick: function onClick() {
@@ -35553,16 +35555,16 @@ var Example = function (_React$Component) {
           )
         ),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          __WEBPACK_IMPORTED_MODULE_1_reactstrap__["v" /* TabContent */],
+          __WEBPACK_IMPORTED_MODULE_1_reactstrap__["s" /* TabContent */],
           { activeTab: this.state.activeTab },
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            __WEBPACK_IMPORTED_MODULE_1_reactstrap__["w" /* TabPane */],
+            __WEBPACK_IMPORTED_MODULE_1_reactstrap__["t" /* TabPane */],
             { tabId: '1' },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              __WEBPACK_IMPORTED_MODULE_1_reactstrap__["u" /* Row */],
+              __WEBPACK_IMPORTED_MODULE_1_reactstrap__["r" /* Row */],
               null,
               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                __WEBPACK_IMPORTED_MODULE_1_reactstrap__["e" /* Col */],
+                __WEBPACK_IMPORTED_MODULE_1_reactstrap__["b" /* Col */],
                 { sm: '12' },
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                   'h4',
@@ -35570,102 +35572,102 @@ var Example = function (_React$Component) {
                   'Llena los campos requeridos'
                 ),
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  __WEBPACK_IMPORTED_MODULE_1_reactstrap__["k" /* Form */],
+                  __WEBPACK_IMPORTED_MODULE_1_reactstrap__["h" /* Form */],
                   null,
                   __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    __WEBPACK_IMPORTED_MODULE_1_reactstrap__["u" /* Row */],
+                    __WEBPACK_IMPORTED_MODULE_1_reactstrap__["r" /* Row */],
                     { form: true },
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                      __WEBPACK_IMPORTED_MODULE_1_reactstrap__["e" /* Col */],
+                      __WEBPACK_IMPORTED_MODULE_1_reactstrap__["b" /* Col */],
                       { md: { size: 4, offset: 1 } },
                       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        __WEBPACK_IMPORTED_MODULE_1_reactstrap__["l" /* FormGroup */],
+                        __WEBPACK_IMPORTED_MODULE_1_reactstrap__["i" /* FormGroup */],
                         null,
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                          __WEBPACK_IMPORTED_MODULE_1_reactstrap__["n" /* Label */],
+                          __WEBPACK_IMPORTED_MODULE_1_reactstrap__["k" /* Label */],
                           { 'for': 'exampleEmail' },
                           'Nombres'
                         ),
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["m" /* Input */], { type: 'text', name: 'nombresPaciente', bsSize: 'sm', id: 'exampleEmail', placeholder: 'Nombres' })
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["j" /* Input */], { type: 'text', name: 'nombresPaciente', bsSize: 'sm', id: 'exampleEmail', placeholder: 'Nombres' })
                       )
                     ),
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                      __WEBPACK_IMPORTED_MODULE_1_reactstrap__["e" /* Col */],
+                      __WEBPACK_IMPORTED_MODULE_1_reactstrap__["b" /* Col */],
                       { md: { size: 4, offset: 1 } },
                       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        __WEBPACK_IMPORTED_MODULE_1_reactstrap__["l" /* FormGroup */],
+                        __WEBPACK_IMPORTED_MODULE_1_reactstrap__["i" /* FormGroup */],
                         null,
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                          __WEBPACK_IMPORTED_MODULE_1_reactstrap__["n" /* Label */],
+                          __WEBPACK_IMPORTED_MODULE_1_reactstrap__["k" /* Label */],
                           { 'for': 'examplePassword' },
                           'Apellidos'
                         ),
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["m" /* Input */], { type: 'text', name: 'apellidosPaciente', bsSize: 'sm', id: 'examplePassword', placeholder: 'Apellidos' })
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["j" /* Input */], { type: 'text', name: 'apellidosPaciente', bsSize: 'sm', id: 'examplePassword', placeholder: 'Apellidos' })
                       )
                     )
                   ),
                   __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    __WEBPACK_IMPORTED_MODULE_1_reactstrap__["u" /* Row */],
+                    __WEBPACK_IMPORTED_MODULE_1_reactstrap__["r" /* Row */],
                     { form: true },
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                      __WEBPACK_IMPORTED_MODULE_1_reactstrap__["e" /* Col */],
+                      __WEBPACK_IMPORTED_MODULE_1_reactstrap__["b" /* Col */],
                       { md: { size: 4, offset: 1 } },
                       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        __WEBPACK_IMPORTED_MODULE_1_reactstrap__["l" /* FormGroup */],
+                        __WEBPACK_IMPORTED_MODULE_1_reactstrap__["i" /* FormGroup */],
                         null,
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                          __WEBPACK_IMPORTED_MODULE_1_reactstrap__["n" /* Label */],
+                          __WEBPACK_IMPORTED_MODULE_1_reactstrap__["k" /* Label */],
                           { 'for': 'exampleEmail' },
                           'Fecha de nacimiento'
                         ),
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["m" /* Input */], { type: 'date', name: 'fechaNacimientoPaciente', id: 'exampleDate', placeholder: 'date placeholder', bsSize: 'sm' })
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["j" /* Input */], { type: 'date', name: 'fechaNacimientoPaciente', id: 'exampleDate', placeholder: 'date placeholder', bsSize: 'sm' })
                       )
                     ),
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                      __WEBPACK_IMPORTED_MODULE_1_reactstrap__["e" /* Col */],
+                      __WEBPACK_IMPORTED_MODULE_1_reactstrap__["b" /* Col */],
                       { md: { size: 4, offset: 1 } },
                       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        __WEBPACK_IMPORTED_MODULE_1_reactstrap__["l" /* FormGroup */],
+                        __WEBPACK_IMPORTED_MODULE_1_reactstrap__["i" /* FormGroup */],
                         null,
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                          __WEBPACK_IMPORTED_MODULE_1_reactstrap__["n" /* Label */],
+                          __WEBPACK_IMPORTED_MODULE_1_reactstrap__["k" /* Label */],
                           { 'for': 'examplePassword' },
                           'Direccion'
                         ),
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["m" /* Input */], { type: 'text', name: 'direccionPaciente', bsSize: 'sm', id: 'examplePassword', placeholder: 'Direccion' })
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["j" /* Input */], { type: 'text', name: 'direccionPaciente', bsSize: 'sm', id: 'examplePassword', placeholder: 'Direccion' })
                       )
                     )
                   ),
                   __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    __WEBPACK_IMPORTED_MODULE_1_reactstrap__["u" /* Row */],
+                    __WEBPACK_IMPORTED_MODULE_1_reactstrap__["r" /* Row */],
                     { form: true },
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                      __WEBPACK_IMPORTED_MODULE_1_reactstrap__["e" /* Col */],
+                      __WEBPACK_IMPORTED_MODULE_1_reactstrap__["b" /* Col */],
                       { md: { size: 4, offset: 1 } },
                       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        __WEBPACK_IMPORTED_MODULE_1_reactstrap__["l" /* FormGroup */],
+                        __WEBPACK_IMPORTED_MODULE_1_reactstrap__["i" /* FormGroup */],
                         null,
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                          __WEBPACK_IMPORTED_MODULE_1_reactstrap__["n" /* Label */],
+                          __WEBPACK_IMPORTED_MODULE_1_reactstrap__["k" /* Label */],
                           { 'for': 'exampleEmail' },
                           'Municipio'
                         ),
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["m" /* Input */], { type: 'text', name: 'municipios', bsSize: 'sm', id: 'exampleEmail', placeholder: 'Municipio' })
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["j" /* Input */], { type: 'text', name: 'municipios', bsSize: 'sm', id: 'exampleEmail', placeholder: 'Municipio' })
                       )
                     ),
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                      __WEBPACK_IMPORTED_MODULE_1_reactstrap__["e" /* Col */],
+                      __WEBPACK_IMPORTED_MODULE_1_reactstrap__["b" /* Col */],
                       { md: { size: 4, offset: 1 } },
                       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        __WEBPACK_IMPORTED_MODULE_1_reactstrap__["l" /* FormGroup */],
+                        __WEBPACK_IMPORTED_MODULE_1_reactstrap__["i" /* FormGroup */],
                         null,
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                          __WEBPACK_IMPORTED_MODULE_1_reactstrap__["n" /* Label */],
+                          __WEBPACK_IMPORTED_MODULE_1_reactstrap__["k" /* Label */],
                           { 'for': 'examplePassword' },
                           'Departamento'
                         ),
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                          __WEBPACK_IMPORTED_MODULE_1_reactstrap__["m" /* Input */],
+                          __WEBPACK_IMPORTED_MODULE_1_reactstrap__["j" /* Input */],
                           { type: 'select', name: 'departamentos', id: 'exampleSelect', bsSize: 'sm' },
                           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                             'option',
@@ -35697,74 +35699,74 @@ var Example = function (_React$Component) {
                     )
                   ),
                   __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    __WEBPACK_IMPORTED_MODULE_1_reactstrap__["u" /* Row */],
+                    __WEBPACK_IMPORTED_MODULE_1_reactstrap__["r" /* Row */],
                     { form: true },
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                      __WEBPACK_IMPORTED_MODULE_1_reactstrap__["e" /* Col */],
+                      __WEBPACK_IMPORTED_MODULE_1_reactstrap__["b" /* Col */],
                       { md: { size: 4, offset: 1 } },
                       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        __WEBPACK_IMPORTED_MODULE_1_reactstrap__["l" /* FormGroup */],
+                        __WEBPACK_IMPORTED_MODULE_1_reactstrap__["i" /* FormGroup */],
                         null,
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                          __WEBPACK_IMPORTED_MODULE_1_reactstrap__["n" /* Label */],
+                          __WEBPACK_IMPORTED_MODULE_1_reactstrap__["k" /* Label */],
                           { 'for': 'exampleEmail' },
                           'Documento de identidad'
                         ),
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["m" /* Input */], { type: 'text', name: 'documentoIdentidad', bsSize: 'sm', id: 'exampleEmail', placeholder: 'Documento de identidad' })
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["j" /* Input */], { type: 'text', name: 'documentoIdentidad', bsSize: 'sm', id: 'exampleEmail', placeholder: 'Documento de identidad' })
                       )
                     ),
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                      __WEBPACK_IMPORTED_MODULE_1_reactstrap__["e" /* Col */],
+                      __WEBPACK_IMPORTED_MODULE_1_reactstrap__["b" /* Col */],
                       { md: { size: 4, offset: 1 } },
                       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        __WEBPACK_IMPORTED_MODULE_1_reactstrap__["l" /* FormGroup */],
+                        __WEBPACK_IMPORTED_MODULE_1_reactstrap__["i" /* FormGroup */],
                         null,
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                          __WEBPACK_IMPORTED_MODULE_1_reactstrap__["n" /* Label */],
+                          __WEBPACK_IMPORTED_MODULE_1_reactstrap__["k" /* Label */],
                           { 'for': 'examplePassword' },
                           'Profesion u oficio'
                         ),
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["m" /* Input */], { type: 'text', name: 'profesionOficio', bsSize: 'sm', id: 'examplePassword', placeholder: 'Profesion' })
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["j" /* Input */], { type: 'text', name: 'profesionOficio', bsSize: 'sm', id: 'examplePassword', placeholder: 'Profesion' })
                       )
                     )
                   ),
                   __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    __WEBPACK_IMPORTED_MODULE_1_reactstrap__["u" /* Row */],
+                    __WEBPACK_IMPORTED_MODULE_1_reactstrap__["r" /* Row */],
                     { form: true },
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                      __WEBPACK_IMPORTED_MODULE_1_reactstrap__["e" /* Col */],
+                      __WEBPACK_IMPORTED_MODULE_1_reactstrap__["b" /* Col */],
                       { md: { size: 4, offset: 1 } },
                       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        __WEBPACK_IMPORTED_MODULE_1_reactstrap__["l" /* FormGroup */],
+                        __WEBPACK_IMPORTED_MODULE_1_reactstrap__["i" /* FormGroup */],
                         null,
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                          __WEBPACK_IMPORTED_MODULE_1_reactstrap__["n" /* Label */],
+                          __WEBPACK_IMPORTED_MODULE_1_reactstrap__["k" /* Label */],
                           { 'for': 'exampleEmail' },
                           'Nombre padre o madre'
                         ),
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["m" /* Input */], { type: 'text', name: 'nombrePadre', bsSize: 'sm', id: 'exampleEmail', placeholder: 'Nombre padre' })
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["j" /* Input */], { type: 'text', name: 'nombrePadre', bsSize: 'sm', id: 'exampleEmail', placeholder: 'Nombre padre' })
                       )
                     ),
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                      __WEBPACK_IMPORTED_MODULE_1_reactstrap__["e" /* Col */],
+                      __WEBPACK_IMPORTED_MODULE_1_reactstrap__["b" /* Col */],
                       { md: { size: 4, offset: 1 } },
                       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        __WEBPACK_IMPORTED_MODULE_1_reactstrap__["l" /* FormGroup */],
+                        __WEBPACK_IMPORTED_MODULE_1_reactstrap__["i" /* FormGroup */],
                         { check: true, inline: true },
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                          __WEBPACK_IMPORTED_MODULE_1_reactstrap__["n" /* Label */],
+                          __WEBPACK_IMPORTED_MODULE_1_reactstrap__["k" /* Label */],
                           { check: true },
-                          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["m" /* Input */], { type: 'checkbox', name: 'hombre' }),
+                          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["j" /* Input */], { type: 'checkbox', name: 'hombre' }),
                           ' Hombre'
                         )
                       ),
                       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        __WEBPACK_IMPORTED_MODULE_1_reactstrap__["l" /* FormGroup */],
+                        __WEBPACK_IMPORTED_MODULE_1_reactstrap__["i" /* FormGroup */],
                         { check: true, inline: true },
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                          __WEBPACK_IMPORTED_MODULE_1_reactstrap__["n" /* Label */],
+                          __WEBPACK_IMPORTED_MODULE_1_reactstrap__["k" /* Label */],
                           { check: true },
-                          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["m" /* Input */], { type: 'checkbox', name: 'mujer' }),
+                          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["j" /* Input */], { type: 'checkbox', name: 'mujer' }),
                           'Mujer'
                         )
                       )
@@ -35780,117 +35782,394 @@ var Example = function (_React$Component) {
             )
           ),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            __WEBPACK_IMPORTED_MODULE_1_reactstrap__["w" /* TabPane */],
+            __WEBPACK_IMPORTED_MODULE_1_reactstrap__["t" /* TabPane */],
             { tabId: '2' },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              __WEBPACK_IMPORTED_MODULE_1_reactstrap__["u" /* Row */],
-              null,
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["e" /* Col */], { sm: '6' })
-            )
-          ),
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            __WEBPACK_IMPORTED_MODULE_1_reactstrap__["w" /* TabPane */],
-            { tabId: '3' },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              __WEBPACK_IMPORTED_MODULE_1_reactstrap__["u" /* Row */],
+              __WEBPACK_IMPORTED_MODULE_1_reactstrap__["r" /* Row */],
               null,
               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                __WEBPACK_IMPORTED_MODULE_1_reactstrap__["e" /* Col */],
-                { sm: '6' },
+                __WEBPACK_IMPORTED_MODULE_1_reactstrap__["b" /* Col */],
+                { sm: '12' },
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  __WEBPACK_IMPORTED_MODULE_1_reactstrap__["b" /* Card */],
-                  { body: true },
+                  'h4',
+                  null,
+                  'Llena los campos requeridos'
+                ),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  __WEBPACK_IMPORTED_MODULE_1_reactstrap__["h" /* Form */],
+                  null,
                   __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    __WEBPACK_IMPORTED_MODULE_1_reactstrap__["d" /* CardTitle */],
-                    null,
-                    'Special Title Treatment'
+                    __WEBPACK_IMPORTED_MODULE_1_reactstrap__["r" /* Row */],
+                    { form: true },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      __WEBPACK_IMPORTED_MODULE_1_reactstrap__["b" /* Col */],
+                      { md: { size: 4, offset: 1 } },
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        __WEBPACK_IMPORTED_MODULE_1_reactstrap__["i" /* FormGroup */],
+                        null,
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                          __WEBPACK_IMPORTED_MODULE_1_reactstrap__["k" /* Label */],
+                          { 'for': 'exampleEmail' },
+                          'Nombres'
+                        ),
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["j" /* Input */], { type: 'text', name: 'nombresUsuario', bsSize: 'sm', id: 'exampleEmail', placeholder: 'Nombres' })
+                      )
+                    ),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      __WEBPACK_IMPORTED_MODULE_1_reactstrap__["b" /* Col */],
+                      { md: { size: 4, offset: 1 } },
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        __WEBPACK_IMPORTED_MODULE_1_reactstrap__["i" /* FormGroup */],
+                        null,
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                          __WEBPACK_IMPORTED_MODULE_1_reactstrap__["k" /* Label */],
+                          { 'for': 'examplePassword' },
+                          'Apellidos'
+                        ),
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["j" /* Input */], { type: 'text', name: 'apellidosUsuario', bsSize: 'sm', id: 'examplePassword', placeholder: 'Apellidos' })
+                      )
+                    )
                   ),
                   __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    __WEBPACK_IMPORTED_MODULE_1_reactstrap__["c" /* CardText */],
-                    null,
-                    'With supporting text below as a natural lead-in to additional content.'
+                    __WEBPACK_IMPORTED_MODULE_1_reactstrap__["r" /* Row */],
+                    { form: true },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      __WEBPACK_IMPORTED_MODULE_1_reactstrap__["b" /* Col */],
+                      { md: { size: 4, offset: 1 } },
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        __WEBPACK_IMPORTED_MODULE_1_reactstrap__["i" /* FormGroup */],
+                        null,
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                          __WEBPACK_IMPORTED_MODULE_1_reactstrap__["k" /* Label */],
+                          { 'for': 'exampleEmail' },
+                          'Fecha de nacimiento'
+                        ),
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["j" /* Input */], { type: 'date', name: 'fechaNacimientoUsuario', id: 'exampleDate', placeholder: 'date placeholder', bsSize: 'sm' })
+                      )
+                    ),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      __WEBPACK_IMPORTED_MODULE_1_reactstrap__["b" /* Col */],
+                      { md: { size: 4, offset: 1 } },
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        __WEBPACK_IMPORTED_MODULE_1_reactstrap__["i" /* FormGroup */],
+                        null,
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                          __WEBPACK_IMPORTED_MODULE_1_reactstrap__["k" /* Label */],
+                          { 'for': 'examplePassword' },
+                          'Direccion'
+                        ),
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["j" /* Input */], { type: 'text', name: 'direccionUsuario', bsSize: 'sm', id: 'examplePassword', placeholder: 'Direccion' })
+                      )
+                    )
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    __WEBPACK_IMPORTED_MODULE_1_reactstrap__["r" /* Row */],
+                    { form: true },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      __WEBPACK_IMPORTED_MODULE_1_reactstrap__["b" /* Col */],
+                      { md: { size: 4, offset: 1 } },
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        __WEBPACK_IMPORTED_MODULE_1_reactstrap__["i" /* FormGroup */],
+                        null,
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                          __WEBPACK_IMPORTED_MODULE_1_reactstrap__["k" /* Label */],
+                          { 'for': 'exampleEmail' },
+                          'Municipio'
+                        ),
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["j" /* Input */], { type: 'text', name: 'municipios', bsSize: 'sm', id: 'exampleEmail', placeholder: 'Municipio' })
+                      )
+                    ),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      __WEBPACK_IMPORTED_MODULE_1_reactstrap__["b" /* Col */],
+                      { md: { size: 4, offset: 1 } },
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        __WEBPACK_IMPORTED_MODULE_1_reactstrap__["i" /* FormGroup */],
+                        null,
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                          __WEBPACK_IMPORTED_MODULE_1_reactstrap__["k" /* Label */],
+                          { 'for': 'examplePassword' },
+                          'Departamento'
+                        ),
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                          __WEBPACK_IMPORTED_MODULE_1_reactstrap__["j" /* Input */],
+                          { type: 'select', name: 'departamentos', id: 'exampleSelect', bsSize: 'sm' },
+                          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            'option',
+                            null,
+                            '8:00 am'
+                          ),
+                          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            'option',
+                            null,
+                            '10:00 am'
+                          ),
+                          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            'option',
+                            null,
+                            '4:00 pm'
+                          ),
+                          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            'option',
+                            null,
+                            'Dra. Gloria Perez'
+                          ),
+                          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            'option',
+                            null,
+                            'Dr. Naun Flores'
+                          )
+                        )
+                      )
+                    )
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    __WEBPACK_IMPORTED_MODULE_1_reactstrap__["r" /* Row */],
+                    { form: true },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      __WEBPACK_IMPORTED_MODULE_1_reactstrap__["b" /* Col */],
+                      { md: { size: 4, offset: 1 } },
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        __WEBPACK_IMPORTED_MODULE_1_reactstrap__["i" /* FormGroup */],
+                        null,
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                          __WEBPACK_IMPORTED_MODULE_1_reactstrap__["k" /* Label */],
+                          { 'for': 'exampleEmail' },
+                          'Documento de identidad'
+                        ),
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["j" /* Input */], { type: 'text', name: 'documentoIdentidad', bsSize: 'sm', id: 'exampleEmail', placeholder: 'Documento de identidad' })
+                      )
+                    ),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      __WEBPACK_IMPORTED_MODULE_1_reactstrap__["b" /* Col */],
+                      { md: { size: 4, offset: 1 } },
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        __WEBPACK_IMPORTED_MODULE_1_reactstrap__["i" /* FormGroup */],
+                        null,
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                          __WEBPACK_IMPORTED_MODULE_1_reactstrap__["k" /* Label */],
+                          { 'for': 'examplePassword' },
+                          'Profesion'
+                        ),
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["j" /* Input */], { type: 'text', name: 'profesion', bsSize: 'sm', id: 'examplePassword', placeholder: 'Profesion' })
+                      )
+                    )
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    __WEBPACK_IMPORTED_MODULE_1_reactstrap__["r" /* Row */],
+                    { form: true },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      __WEBPACK_IMPORTED_MODULE_1_reactstrap__["b" /* Col */],
+                      { md: { size: 4, offset: 1 } },
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        __WEBPACK_IMPORTED_MODULE_1_reactstrap__["i" /* FormGroup */],
+                        null,
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                          __WEBPACK_IMPORTED_MODULE_1_reactstrap__["k" /* Label */],
+                          { 'for': 'exampleEmail' },
+                          'NIT'
+                        ),
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["j" /* Input */], { type: 'text', name: 'nit', bsSize: 'sm', id: 'exampleEmail', placeholder: 'NIT' })
+                      )
+                    ),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      __WEBPACK_IMPORTED_MODULE_1_reactstrap__["b" /* Col */],
+                      { md: { size: 4, offset: 1 } },
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        __WEBPACK_IMPORTED_MODULE_1_reactstrap__["i" /* FormGroup */],
+                        null,
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                          __WEBPACK_IMPORTED_MODULE_1_reactstrap__["k" /* Label */],
+                          { 'for': 'examplePassword' },
+                          'Numero Seguro Social'
+                        ),
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["j" /* Input */], { type: 'text', name: 'numSeguroSocial', bsSize: 'sm', id: 'examplePassword', placeholder: 'Numero Seguro Social' })
+                      )
+                    )
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    __WEBPACK_IMPORTED_MODULE_1_reactstrap__["r" /* Row */],
+                    { form: true },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      __WEBPACK_IMPORTED_MODULE_1_reactstrap__["b" /* Col */],
+                      { md: { size: 4, offset: 1 } },
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        __WEBPACK_IMPORTED_MODULE_1_reactstrap__["i" /* FormGroup */],
+                        null,
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                          __WEBPACK_IMPORTED_MODULE_1_reactstrap__["k" /* Label */],
+                          { 'for': 'exampleEmail' },
+                          'Especialidad'
+                        ),
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                          __WEBPACK_IMPORTED_MODULE_1_reactstrap__["j" /* Input */],
+                          { type: 'select', name: 'listaEspecialiades', id: 'exampleSelect', bsSize: 'sm' },
+                          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            'option',
+                            null,
+                            '8:00 am'
+                          ),
+                          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            'option',
+                            null,
+                            '10:00 am'
+                          ),
+                          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            'option',
+                            null,
+                            '4:00 pm'
+                          ),
+                          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            'option',
+                            null,
+                            'Dra. Gloria Perez'
+                          ),
+                          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            'option',
+                            null,
+                            'Dr. Naun Flores'
+                          )
+                        )
+                      )
+                    ),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      __WEBPACK_IMPORTED_MODULE_1_reactstrap__["b" /* Col */],
+                      { md: { size: 4, offset: 1 } },
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        __WEBPACK_IMPORTED_MODULE_1_reactstrap__["i" /* FormGroup */],
+                        null,
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                          __WEBPACK_IMPORTED_MODULE_1_reactstrap__["k" /* Label */],
+                          { 'for': 'examplePassword' },
+                          'Numero Junta de Vigilancia'
+                        ),
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["j" /* Input */], { type: 'text', name: 'numJuntaVigilancia', bsSize: 'sm', id: 'examplePassword', placeholder: 'Numero Junta de Vigilancia' })
+                      )
+                    )
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    __WEBPACK_IMPORTED_MODULE_1_reactstrap__["r" /* Row */],
+                    { form: true },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      __WEBPACK_IMPORTED_MODULE_1_reactstrap__["b" /* Col */],
+                      { md: { size: 4, offset: 1 } },
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        __WEBPACK_IMPORTED_MODULE_1_reactstrap__["i" /* FormGroup */],
+                        null,
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                          __WEBPACK_IMPORTED_MODULE_1_reactstrap__["k" /* Label */],
+                          { 'for': 'exampleEmail' },
+                          'Puesto asignacion'
+                        ),
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                          __WEBPACK_IMPORTED_MODULE_1_reactstrap__["j" /* Input */],
+                          { type: 'select', name: 'listaPuestos', id: 'exampleSelect', bsSize: 'sm' },
+                          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            'option',
+                            null,
+                            '8:00 am'
+                          ),
+                          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            'option',
+                            null,
+                            '10:00 am'
+                          ),
+                          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            'option',
+                            null,
+                            '4:00 pm'
+                          ),
+                          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            'option',
+                            null,
+                            'Dra. Gloria Perez'
+                          ),
+                          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            'option',
+                            null,
+                            'Dr. Naun Flores'
+                          )
+                        )
+                      )
+                    ),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      __WEBPACK_IMPORTED_MODULE_1_reactstrap__["b" /* Col */],
+                      { md: { size: 4, offset: 1 } },
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        __WEBPACK_IMPORTED_MODULE_1_reactstrap__["i" /* FormGroup */],
+                        null,
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                          __WEBPACK_IMPORTED_MODULE_1_reactstrap__["k" /* Label */],
+                          { 'for': 'exampleEmail' },
+                          'Estado Civil'
+                        ),
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                          __WEBPACK_IMPORTED_MODULE_1_reactstrap__["j" /* Input */],
+                          { type: 'select', name: 'listaEspecialidades', id: 'exampleSelect', bsSize: 'sm' },
+                          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            'option',
+                            null,
+                            '8:00 am'
+                          ),
+                          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            'option',
+                            null,
+                            '10:00 am'
+                          ),
+                          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            'option',
+                            null,
+                            '4:00 pm'
+                          ),
+                          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            'option',
+                            null,
+                            'Dra. Gloria Perez'
+                          ),
+                          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            'option',
+                            null,
+                            'Dr. Naun Flores'
+                          )
+                        )
+                      )
+                    )
+                  ),
+                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    __WEBPACK_IMPORTED_MODULE_1_reactstrap__["r" /* Row */],
+                    { form: true },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      __WEBPACK_IMPORTED_MODULE_1_reactstrap__["b" /* Col */],
+                      { md: { size: 4, offset: 1 } },
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        __WEBPACK_IMPORTED_MODULE_1_reactstrap__["i" /* FormGroup */],
+                        null,
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                          __WEBPACK_IMPORTED_MODULE_1_reactstrap__["k" /* Label */],
+                          { 'for': 'exampleEmail' },
+                          'Nombre Usuario'
+                        ),
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["j" /* Input */], _defineProperty({ type: 'text', name: 'nombre Usuario', bsSize: 'sm', id: 'exampleEmail', placeholder: 'Nombre Usuario' }, 'bsSize', 'sm'))
+                      )
+                    ),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                      __WEBPACK_IMPORTED_MODULE_1_reactstrap__["b" /* Col */],
+                      { md: { size: 4, offset: 1 } },
+                      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                        __WEBPACK_IMPORTED_MODULE_1_reactstrap__["i" /* FormGroup */],
+                        null,
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                          __WEBPACK_IMPORTED_MODULE_1_reactstrap__["k" /* Label */],
+                          { 'for': 'exampleEmail' },
+                          'Contrasena'
+                        ),
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["j" /* Input */], _defineProperty({ type: 'text', name: 'contraUsuario', bsSize: 'sm', id: 'exampleEmail', placeholder: 'Contrasenia' }, 'bsSize', 'sm'))
+                      )
+                    )
                   ),
                   __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                     __WEBPACK_IMPORTED_MODULE_1_reactstrap__["a" /* Button */],
                     null,
-                    'Go somewhere'
-                  )
-                )
-              ),
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                __WEBPACK_IMPORTED_MODULE_1_reactstrap__["e" /* Col */],
-                { sm: '6' },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  __WEBPACK_IMPORTED_MODULE_1_reactstrap__["b" /* Card */],
-                  { body: true },
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    __WEBPACK_IMPORTED_MODULE_1_reactstrap__["d" /* CardTitle */],
-                    null,
-                    'Special Title Treatment'
-                  ),
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    __WEBPACK_IMPORTED_MODULE_1_reactstrap__["c" /* CardText */],
-                    null,
-                    'With supporting text below as a natural lead-in to additional content.'
-                  ),
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    __WEBPACK_IMPORTED_MODULE_1_reactstrap__["a" /* Button */],
-                    null,
-                    'Go somewhere'
-                  )
-                )
-              )
-            )
-          ),
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            __WEBPACK_IMPORTED_MODULE_1_reactstrap__["w" /* TabPane */],
-            { tabId: '4' },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              __WEBPACK_IMPORTED_MODULE_1_reactstrap__["u" /* Row */],
-              null,
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                __WEBPACK_IMPORTED_MODULE_1_reactstrap__["e" /* Col */],
-                { sm: '6' },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  __WEBPACK_IMPORTED_MODULE_1_reactstrap__["b" /* Card */],
-                  { body: true },
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    __WEBPACK_IMPORTED_MODULE_1_reactstrap__["d" /* CardTitle */],
-                    null,
-                    'Special Title Treatment'
-                  ),
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    __WEBPACK_IMPORTED_MODULE_1_reactstrap__["c" /* CardText */],
-                    null,
-                    'With supporting text below as a natural lead-in to additional content.'
-                  ),
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    __WEBPACK_IMPORTED_MODULE_1_reactstrap__["a" /* Button */],
-                    null,
-                    'Go somewhere'
-                  )
-                )
-              ),
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                __WEBPACK_IMPORTED_MODULE_1_reactstrap__["e" /* Col */],
-                { sm: '6' },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                  __WEBPACK_IMPORTED_MODULE_1_reactstrap__["b" /* Card */],
-                  { body: true },
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    __WEBPACK_IMPORTED_MODULE_1_reactstrap__["d" /* CardTitle */],
-                    null,
-                    'Special Title Treatment'
-                  ),
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    __WEBPACK_IMPORTED_MODULE_1_reactstrap__["c" /* CardText */],
-                    null,
-                    'With supporting text below as a natural lead-in to additional content.'
-                  ),
-                  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    __WEBPACK_IMPORTED_MODULE_1_reactstrap__["a" /* Button */],
-                    null,
-                    'Go somewhere'
+                    'Agregar Usuario'
                   )
                 )
               )
