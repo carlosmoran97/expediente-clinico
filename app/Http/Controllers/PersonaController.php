@@ -46,7 +46,7 @@ class PersonaController extends Controller
             $clinica = Clinica::findOrFail($request->clinica_id);
             $persona->clinica()->associate($clinica);
         }
-
+        
         // asignandole valores a sus atributos
         $persona->nombre = $request->nombre;
         $persona->apellidos = $request->apellidos;
