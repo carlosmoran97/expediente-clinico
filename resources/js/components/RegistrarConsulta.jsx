@@ -9,12 +9,15 @@ import classnames from 'classnames';
 
 
 
+export default class TabRegistrarConsulta extends React.Component {
+  render() {
+    return (
 
- <TabPane tabId="1">
- <h1>Selecciona la especialidad que deseas y el horario</h1>
- <Row>
-   <Col sm="12">
+
+ 
+
    <Form>
+     <h1>Selecciona la especialidad que deseas y el horario</h1>
         <FormGroup>
           <Label for="exampleEmail">Especialidades</Label>
 
@@ -55,13 +58,8 @@ import classnames from 'classnames';
       </Form>
  
      
-   </Col>
-   <Col sm="6">
-     <Card body>
-       <CardTitle>Special Title Treatment</CardTitle>
-       <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
-       <Button>Go somewhere</Button>
-     </Card>
-   </Col>
- </Row>
-</TabPane>
+   
+
+);
+}
+}
