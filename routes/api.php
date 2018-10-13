@@ -42,7 +42,7 @@ Route::post('/municipio', 'MunicipioController@store');
 Route::put('/municipio', 'MunicipioController@update');
 Route::delete('/municipio', 'MunicipioController@destroy');
 
-//Rutas de los signisvitales
+//Rutas de los signos vitales
 Route::get('/signosvitales', 'SignoVitalController@index');
 Route::post('/signosvitales', 'SignoVitalController@store');
 Route::put('/signosvitales', 'SignoVitalController@update');
@@ -77,11 +77,11 @@ Route::get('/pem', 'ProfesionalEnMedicinaController@index');
 Route::post('/pem','ProfesionalEnMedicinaController@store');
 Route::put('/pem', 'ProfesionalEnMedicinaController@update');
 Route::delete('/pem', 'ProfesionalEnMedicinaController@destroy');
-// Rutas de los signos vitales
-Route::get('/signosvitales', 'TomaDeSignoVitalController@index');
-Route::post('/signosvitales','TomaDesignoVitalController@store');
-Route::put('/signosvitales', 'TomaDeSignoVitalController@update');
-Route::delete('/signosvitales', 'TomaDeSignoVitalController@destroy');
+// Rutas de los  toma de signos vitales
+Route::get('/tdsv', 'TomaDeSignoVitalController@index');
+Route::post('/tdsv','TomaDesignoVitalController@store');
+Route::put('/tdsv', 'TomaDeSignoVitalController@update');
+Route::delete('/tdsv', 'TomaDeSignoVitalController@destroy');
 
 // Rutas de  consulta
 Route::get('/consulta', 'ConsultaController@index');
