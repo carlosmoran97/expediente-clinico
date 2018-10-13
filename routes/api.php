@@ -71,3 +71,9 @@ Route::get('/paciente', 'PacienteController@index');
 Route::post('/paciente','PacienteController@store');
 Route::put('/paciente', 'PacienteController@update');
 Route::delete('/paciente', 'PacienteController@destroy');
+
+// Rutas de los profesionales en medicina
+Route::get('/pem', 'ProfesionalEnMedicinaController@index');
+Route::post('/pem','ProfesionalEnMedicinaController@store');
+Route::put('/pem', 'ProfesionalEnMedicinaController@update');
+Route::delete('/pem', 'ProfesionalEnMedicinaController@destroy');
