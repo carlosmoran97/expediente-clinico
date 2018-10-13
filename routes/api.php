@@ -63,5 +63,11 @@ Route::delete('/persona', 'PersonaController@destroy');
 
 Route::get('/clinica', 'ClinicaController@index');
 Route::post('/clinica','ClinicaController@store');
-Route::put('/clinica', 'Clinicacontroller@update');
+Route::put('/clinica', 'ClinicaController@update');
 Route::delete('/clinica', 'ClinicaController@destroy');
+
+// Rutas de los pacientes
+Route::get('/paciente', 'PacienteController@index');
+Route::post('/paciente','PacienteController@store');
+Route::put('/paciente', 'PacienteController@update');
+Route::delete('/paciente', 'PacienteController@destroy');

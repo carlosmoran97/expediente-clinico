@@ -41,8 +41,11 @@ class PersonaController extends Controller
         $persona = new Persona();
 
         // obteniendo las entidades con las que se relaciona
-        $direccion = Persona::findOrFail($request->direccion_id);
-        $clinica = Clinica::findOrFail($request->clinica_id);
+        $direccion = Direccion::findOrFail($request->direccion_id);
+        if(isset($request->clinica_id)){
+            $clinica = Clinica::findOrFail($request->clinica_id);
+            $persona->clinica()->associate($clinica);
+        }
 
         // asignandole valores a sus atributos
         $persona->nombre = $request->nombre;
@@ -50,8 +53,9 @@ class PersonaController extends Controller
         $persona->fechaDeNacimiento = $request->fechaDeNacimiento;
         $persona->estadoCivil = $request->estadoCivil;
         $persona->genero = $request->genero;
+        $persona->documentoDeIdentidad = $request->documentoDeIdentidad;
         $persona->direccion()->associate($direccion);
-        $persona->clinica()->associate($clinica);
+        
         $persona->save();
         return $persona;
     }
