@@ -59,7 +59,7 @@ Route::post('/persona', 'PersonaController@store');
 Route::put('/persona', 'PersonaController@update');
 Route::delete('/persona', 'PersonaController@destroy');
 
-// Ruta de las direcciones
+// Ruta de las direcciones de clinica
 
 Route::get('/clinica', 'ClinicaController@index');
 Route::post('/clinica','ClinicaController@store');
