@@ -14,10 +14,7 @@ class DireccionController extends Controller
      */
     public function index()
     {
-        $direcciones = Direccion::join('municipios', 'direcciones.municipio_id', '=', 'municipios.id')
-            ->select('direcciones.id', 'direcciones.casa', 'direcciones.calle', 'direcciones.colonia', 'municipios.municipio')
-            ->orderBy('direcciones.id')
-            ->get();
+        $direcciones = Direccion::with('municipio')->get();
         return $direcciones;
     }
 
