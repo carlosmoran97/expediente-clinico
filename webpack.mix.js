@@ -11,8 +11,8 @@ let mix = require('laravel-mix');
  |
  */
 
-mix.react('resources/js/app.js', 'public/js')
-   //.sass('resources/sass/app.scss', 'public/css')
+mix.react('resources/js/App.js', 'public/js')
+    .react('resources/js/Login.js', 'public/js')
    .sass('resources/sass/estilos-base.scss','public/css')
    .sass('resources/sass/expediente-clinico.scss','public/css')
    .sass('resources/sass/panel-admin.scss','public/css')
