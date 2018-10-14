@@ -3,7 +3,9 @@ import { TabContent, TabPane, Nav, NavItem, NavLink, Card, Button, CardTitle, Ca
 import classnames from 'classnames';
 import TabAgregarUsuario from './AgregarUsuario'
 import TabAgregarClinica from './AgregarClinica'
-export default class Example extends React.Component {
+import TabNuevoExpediente from './NuevoExpediente'
+import TabRegistrarConsulta from './RegistrarConsulta';
+export default class NavtTabs extends React.Component {
   constructor(props) {
     super(props);
 
@@ -37,7 +39,7 @@ export default class Example extends React.Component {
               className={classnames({ active: this.state.activeTab === '2' })}
               onClick={() => { this.toggle('2'); }}
             >
-              Registrar Signos
+              Agregar Usuario
             </NavLink>
           </NavItem>
           <NavItem>
@@ -45,7 +47,7 @@ export default class Example extends React.Component {
               className={classnames({ active: this.state.activeTab === '3' })}
               onClick={() => { this.toggle('3'); }}
             >
-              Gestionar Consulta
+              Registrar Consulta
             </NavLink>
           </NavItem>
 
@@ -54,7 +56,7 @@ export default class Example extends React.Component {
               className={classnames({ active: this.state.activeTab === '4' })}
               onClick={() => { this.toggle('4'); }}
             >
-              Escanear Examen
+              Agregar Clinica
             </NavLink>
           </NavItem>
         </Nav>
@@ -62,106 +64,14 @@ export default class Example extends React.Component {
         {/*CONTENIDOS DE LAS TABS*/}
 
 
-        {/*CONTENIDOS DE LAS TAB 1*/}
+        {/*CONTENIDOS DE LA TAB 1*/}
         <TabContent activeTab={this.state.activeTab}>
           <TabPane tabId="1">
             <Row>
               <Col sm="12">
-                <h4>Llena los campos requeridos</h4>
 
-                <Form>
-                  <Row form>
-                    <Col md={{ size: 4, offset: 1 }}>
-                      <FormGroup>
-                        <Label for="exampleEmail">Nombres</Label>
-                        <Input type="text" name="nombresPaciente" bsSize="sm" id="exampleEmail" placeholder="Nombres" />
-                      </FormGroup>
-                    </Col>
-                    <Col md={{ size: 4, offset: 1 }}>
-                      <FormGroup>
-                        <Label for="examplePassword">Apellidos</Label>
-                        <Input type="text" name="apellidosPaciente" bsSize="sm" id="examplePassword" placeholder="Apellidos" />
-                      </FormGroup>
-                    </Col>
-                  </Row>
-                  <Row form>
-                    <Col md={{ size: 4, offset: 1 }}>
-                      <FormGroup>
-                        <Label for="exampleEmail">Fecha de nacimiento</Label>
-                        <Input type="date" name="fechaNacimientoPaciente" id="exampleDate" placeholder="date placeholder" bsSize="sm" />
-
-                      </FormGroup>
-                    </Col>
-                    <Col md={{ size: 4, offset: 1 }}>
-                      <FormGroup>
-                        <Label for="examplePassword">Direccion</Label>
-                        <Input type="text" name="direccionPaciente" bsSize="sm" id="examplePassword" placeholder="Direccion" />
-                      </FormGroup>
-                    </Col>
-                  </Row>
-                  <Row form>
-                    <Col md={{ size: 4, offset: 1 }}>
-                      <FormGroup>
-                        <Label for="exampleEmail">Municipio</Label>
-                        <Input type="text" name="municipios" bsSize="sm" id="exampleEmail" placeholder="Municipio" />
-                      </FormGroup>
-                    </Col>
-                    <Col md={{ size: 4, offset: 1 }}>
-                      <FormGroup>
-
-                        <Label for="examplePassword">Departamento</Label>
-
-                        <Input type="select" name="departamentos" id="exampleSelect" bsSize="sm">
-                          <option>8:00 am</option>
-                          <option>10:00 am</option>
-                          <option>4:00 pm</option>
-                          <option>Dra. Gloria Perez</option>
-                          <option>Dr. Naun Flores</option>
-                        </Input>
-                      </FormGroup>
-                    </Col>
-                  </Row>
-                  <Row form>
-                    <Col md={{ size: 4, offset: 1 }}>
-                      <FormGroup>
-                        <Label for="exampleEmail">Documento de identidad</Label>
-                        <Input type="text" name="documentoIdentidad" bsSize="sm" id="exampleEmail" placeholder="Documento de identidad" />
-                      </FormGroup>
-                    </Col>
-                    <Col md={{ size: 4, offset: 1 }}>
-                      <FormGroup>
-                        <Label for="examplePassword">Profesion u oficio</Label>
-                        <Input type="text" name="profesionOficio" bsSize="sm" id="examplePassword" placeholder="Profesion" />
-                      </FormGroup>
-                    </Col>
-                  </Row>
-                  <Row form>
-                    <Col md={{ size: 4, offset: 1 }}>
-                      <FormGroup>
-                        <Label for="exampleEmail">Nombre padre o madre</Label>
-                        <Input type="text" name="nombrePadre" bsSize="sm" id="exampleEmail" placeholder="Nombre padre" />
-                      </FormGroup>
-                    </Col>
-                    <Col md={{ size: 4, offset: 1 }}>
-                      <FormGroup check inline>
-
-                        <Label check>
-                          <Input type="checkbox" name="hombre" /> Hombre
-          </Label>
-                      </FormGroup>
-                      <FormGroup check inline>
-                        <Label check>
-                          <Input type="checkbox" name="mujer" />Mujer
-          </Label>
-                      </FormGroup>
-                    </Col>
-                  </Row>
-
-
-                  <Button>Crear expediente</Button>
-                </Form>
-
-
+               {/*Renderiza el contenido del tab nuevo expediente*/}
+              <TabNuevoExpediente/>
 
               </Col>
             </Row>
@@ -171,8 +81,8 @@ export default class Example extends React.Component {
           <TabPane tabId="2">
             <Row>
               <Col sm="12">
-               
-                 <TabAgregarUsuario/>
+                {/*Renderiza el contenido del Tab Agregar Usuario*/}
+           <TabAgregarUsuario/>
 
               </Col>
             </Row>
@@ -183,7 +93,18 @@ export default class Example extends React.Component {
           <TabPane tabId="3">
             <Row>
             <Col sm="12">
-                
+                 {/*Renderiza el contenido del tab nuevo*/}
+                 
+                <TabRegistrarConsulta/>
+
+              </Col>
+            </Row>
+          </TabPane>
+          <TabPane tabId="4">
+            <Row>
+            <Col sm="12">
+                 {/*Renderiza el contenido del tab nuevo*/}
+                 <TabAgregarClinica/>
 
 
               </Col>

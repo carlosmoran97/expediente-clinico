@@ -9,7 +9,7 @@ export default class TabAgregarUsuario extends React.Component {
 
 
 <Form>
-<h4>Llena los campos requeridos</h4>
+<h5 className="text-center">Llena los campos requeridos</h5>
   <Row form>
     <Col md={{ size: 4, offset: 1 }}>
       <FormGroup>
@@ -43,7 +43,7 @@ export default class TabAgregarUsuario extends React.Component {
     <Col md={{ size: 4, offset: 1 }}>
       <FormGroup>
         <Label for="exampleEmail">Municipio</Label>
-        <Input type="text" name="municipios" bsSize="sm" id="exampleEmail" placeholder="Municipio" />
+        <Input type="text" name="listaMunicipios" bsSize="sm" id="exampleEmail" placeholder="Municipio" />
       </FormGroup>
     </Col>
     <Col md={{ size: 4, offset: 1 }}>
@@ -51,7 +51,7 @@ export default class TabAgregarUsuario extends React.Component {
 
         <Label for="examplePassword">Departamento</Label>
 
-        <Input type="select" name="departamentos" id="exampleSelect" bsSize="sm">
+        <Input type="select" name="listaDepartamentos" id="exampleSelect" bsSize="sm">
           <option>8:00 am</option>
           <option>10:00 am</option>
           <option>4:00 pm</option>
@@ -65,13 +65,13 @@ export default class TabAgregarUsuario extends React.Component {
     <Col md={{ size: 4, offset: 1 }}>
       <FormGroup>
         <Label for="exampleEmail">Documento de identidad</Label>
-        <Input type="text" name="documentoIdentidad" bsSize="sm" id="exampleEmail" placeholder="Documento de identidad" />
+        <Input type="text" name="documentoIdentidadUsuario" bsSize="sm" id="exampleEmail" placeholder="Documento de identidad" />
       </FormGroup>
     </Col>
     <Col md={{ size: 4, offset: 1 }}>
       <FormGroup>
         <Label for="examplePassword">Profesion</Label>
-        <Input type="text" name="profesion" bsSize="sm" id="examplePassword" placeholder="Profesion" />
+        <Input type="text" name="profesionUsuario" bsSize="sm" id="examplePassword" placeholder="Profesion" />
       </FormGroup>
     </Col>
   </Row>
@@ -79,7 +79,7 @@ export default class TabAgregarUsuario extends React.Component {
     <Col md={{ size: 4, offset: 1 }}>
       <FormGroup>
         <Label for="exampleEmail">NIT</Label>
-        <Input type="text" name="nit" bsSize="sm" id="exampleEmail" placeholder="NIT" />
+        <Input type="text" name="nitUsuario" bsSize="sm" id="exampleEmail" placeholder="NIT" />
       </FormGroup>
     </Col>
     <Col md={{ size: 4, offset: 1 }}>
@@ -93,7 +93,7 @@ export default class TabAgregarUsuario extends React.Component {
     <Col md={{ size: 4, offset: 1 }}>
       <FormGroup>
         <Label for="exampleEmail">Especialidad</Label>
-        <Input type="select" name="listaEspecialiades" id="exampleSelect" bsSize="sm">
+        <Input type="select" name="listaEspecialidades" id="exampleSelect" bsSize="sm">
           <option>8:00 am</option>
           <option>10:00 am</option>
           <option>4:00 pm</option>
@@ -128,7 +128,7 @@ export default class TabAgregarUsuario extends React.Component {
     <Col md={{ size: 4, offset: 1 }}>
     <FormGroup>
         <Label for="exampleEmail">Estado Civil</Label>
-        <Input type="select" name="listaEspecialidades" id="exampleSelect" bsSize="sm">
+        <Input type="select" name="listaEstados" id="exampleSelect" bsSize="sm">
           <option>8:00 am</option>
           <option>10:00 am</option>
           <option>4:00 pm</option>
@@ -142,7 +142,7 @@ export default class TabAgregarUsuario extends React.Component {
     <Col md={{ size: 4, offset: 1 }}>
     <FormGroup>
         <Label for="exampleEmail">Nombre Usuario</Label>
-        <Input type="text" name="nombre Usuario" bsSize="sm" id="exampleEmail" placeholder="Nombre Usuario" bsSize="sm"/>
+        <Input type="text" name="nombreUsuario" bsSize="sm" id="exampleEmail" placeholder="Nombre Usuario" bsSize="sm"/>
       </FormGroup>
       
     </Col>
@@ -156,7 +156,7 @@ export default class TabAgregarUsuario extends React.Component {
   </Row>
 
 
-  <Button>Agregar Usuario</Button>
+  <Button size="sm">Agregar Usuario</Button>
 </Form>
 );
 }
