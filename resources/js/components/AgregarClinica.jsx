@@ -119,6 +119,23 @@ export default class TabAgregarClinica extends React.Component {
             </FormGroup>
           </Col>
         </Row>
+        <Row form>
+          <Col md={{ size: 4, offset: 1 }}>
+            <FormGroup>
+              <Label for="exampleEmail">Calle</Label>
+              <Input type="text" name="calleEncargado" bsSize="sm" id="exampleEmail" placeholder="Nombre Usuario" bsSize="sm" />
+            </FormGroup>
+
+          </Col>
+
+          <Col md={{ size: 4, offset: 1 }}>
+            <FormGroup>
+              <Label for="exampleEmail">Correo electronico</Label>
+              <Input type="text" name="correoEncargado" bsSize="sm" id="exampleEmail" placeholder="Contrasenia" bsSize="sm" />
+            </FormGroup>
+          </Col>
+        </Row>
+        
 
 
         <Button size="sm">Agregar Clinica</Button>
