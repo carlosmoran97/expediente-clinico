@@ -9,6 +9,7 @@ import TabRegistrarConsulta from './RegistrarConsulta';
 import AdministradorUsuarios from './AdministradorUsuarios';
 import AdministradorPacientes from './AdministradorPacientes';
 import AdministradorClinicas from './AdministradorClinicas';
+import FormLogin from './FormLogin'
 
 
 export default class NavtTabs extends React.Component {
@@ -77,10 +78,10 @@ export default class NavtTabs extends React.Component {
         <TabContent activeTab={this.state.activeTab}>
           <TabPane tabId="1">
             <Row>
-              <Col sm="12">
+              <Col sm="4" md={{ size: 3, offset: 4 }}>
 
                {/*Renderiza el contenido del tab nuevo expediente*/}
-              <AdministradorClinicas/>
+              <FormLogin/>
 
               </Col>
             </Row>
@@ -101,7 +102,7 @@ export default class NavtTabs extends React.Component {
 
           <TabPane tabId="3">
             <Row>
-            <Col sm="12">
+            <Col md="12">
                  {/*Renderiza el contenido del tab nuevo*/}
                  
                 <TabRegistrarConsulta/>
@@ -111,7 +112,7 @@ export default class NavtTabs extends React.Component {
           </TabPane>
           <TabPane tabId="4">
             <Row>
-            <Col sm="12">
+            <Col md="12">
                  {/*Renderiza el contenido del tab nuevo*/}
                  <TabAgregarClinica/>
 

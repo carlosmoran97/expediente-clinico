@@ -16,13 +16,10 @@ import NavTabs from './NavTabs'
 require('bootstrap')
 
 
-
 class App extends Component {
     constructor(...props) {
         super(...props)
-      
-
-       
+        
         this.state = {}
 
          {/*COMPONENTE PRINCIPAL*/}
