@@ -154,6 +154,22 @@ export default class TabAgregarUsuario extends React.Component {
       </FormGroup>
     </Col>
   </Row>
+  <Row form>
+    <Col md={{ size: 4, offset: 1 }}>
+    <FormGroup>
+        <Label for="exampleEmail">Correo electronico</Label>
+        <Input type="text" name="correoUsuario" bsSize="sm" id="exampleEmail" placeholder="Correo electronico" bsSize="sm"/>
+      </FormGroup>
+      
+    </Col>
+    
+    <Col md={{ size: 4, offset: 1 }}>
+    <FormGroup>
+        <Label for="exampleEmail">Calle</Label>
+        <Input type="text" name="calleUsuario" bsSize="sm" id="exampleEmail" placeholder="Usuario" bsSize="sm" />
+      </FormGroup>
+    </Col>
+  </Row>
 
 
   <Button size="sm">Agregar Usuario</Button>

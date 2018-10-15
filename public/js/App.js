@@ -37810,6 +37810,38 @@ var TabAgregarUsuario = function (_React$Component) {
           )
         ),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          __WEBPACK_IMPORTED_MODULE_1_reactstrap__["r" /* Row */],
+          { form: true },
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            __WEBPACK_IMPORTED_MODULE_1_reactstrap__["b" /* Col */],
+            { md: { size: 4, offset: 1 } },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              __WEBPACK_IMPORTED_MODULE_1_reactstrap__["i" /* FormGroup */],
+              null,
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                __WEBPACK_IMPORTED_MODULE_1_reactstrap__["k" /* Label */],
+                { 'for': 'exampleEmail' },
+                'Correo electronico'
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["j" /* Input */], _defineProperty({ type: 'text', name: 'correoUsuario', bsSize: 'sm', id: 'exampleEmail', placeholder: 'Correo electronico' }, 'bsSize', 'sm'))
+            )
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            __WEBPACK_IMPORTED_MODULE_1_reactstrap__["b" /* Col */],
+            { md: { size: 4, offset: 1 } },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              __WEBPACK_IMPORTED_MODULE_1_reactstrap__["i" /* FormGroup */],
+              null,
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                __WEBPACK_IMPORTED_MODULE_1_reactstrap__["k" /* Label */],
+                { 'for': 'exampleEmail' },
+                'Calle'
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["j" /* Input */], _defineProperty({ type: 'text', name: 'calleUsuario', bsSize: 'sm', id: 'exampleEmail', placeholder: 'Usuario' }, 'bsSize', 'sm'))
+            )
+          )
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           __WEBPACK_IMPORTED_MODULE_1_reactstrap__["a" /* Button */],
           { size: 'sm' },
           'Agregar Usuario'
