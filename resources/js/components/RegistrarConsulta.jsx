@@ -2,12 +2,34 @@ import React from 'react';
 import { TabContent, TabPane, Nav, NavItem, NavLink, Card, Button, CardTitle, CardText, Row, Col
   , Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 import classnames from 'classnames';
+import axios from 'axios'
 
 
 export default class TabRegistrarConsulta extends React.Component {
+
+constructor(){
+
+  super()
+
+  this.state={
+    posts: []
+  }
+
+  axios.get("http://localhost:3001/posts")
+  .then(response => {
+     this.setState({
+posts : response.data
+     })
+     
+     
+  })
+  .catch(error => {
+      console.log(error)
+  })
+}
   render() {
     return (
-
+ 
    <Form>
      <h5 className="text-center">Selecciona las opcines que mas que convengan!</h5>
         <FormGroup>
@@ -15,11 +37,10 @@ export default class TabRegistrarConsulta extends React.Component {
 
            {/*Lista de especialidades*/}
           <Input type="select" name="listaEspecialidades" id="exampleSelect" bsSize="sm">
-            <option>Pediatria</option>
-            <option>Dermatologia</option>
-            <option>Oftalmologia</option>
-            <option>Oculista</option>
-            <option>Cirujano</option>
+          {this.state.posts.map(post=>
+            <option> {post.title}</option>
+            )}
+          
           </Input>
         </FormGroup>
        

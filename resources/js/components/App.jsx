@@ -1,5 +1,6 @@
 import React, { Component, propTypes } from 'react'
 import ReactDOM from 'react-dom'
+import axios from 'axios'
 import {
     BrowserRouter as Router,
     Route,
@@ -19,7 +20,9 @@ require('bootstrap')
 class App extends Component {
     constructor(...props) {
         super(...props)
+      
 
+       
         this.state = {}
 
          {/*COMPONENTE PRINCIPAL*/}
@@ -29,7 +32,7 @@ class App extends Component {
     render() {
         return (
 
-            <div class="">
+            <div className="">
 
                 <header> {/*Barra de navegacion*/}
                     <BarraNav />

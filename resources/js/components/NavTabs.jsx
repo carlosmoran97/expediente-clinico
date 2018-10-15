@@ -4,10 +4,19 @@ import classnames from 'classnames';
 import TabAgregarUsuario from './AgregarUsuario'
 import TabAgregarClinica from './AgregarClinica'
 import TabNuevoExpediente from './NuevoExpediente'
+import axios from 'axios'
 import TabRegistrarConsulta from './RegistrarConsulta';
+import AdministradorUsuarios from './AdministradorUsuarios';
+import AdministradorPacientes from './AdministradorPacientes';
+import AdministradorClinicas from './AdministradorClinicas';
+
+
 export default class NavtTabs extends React.Component {
   constructor(props) {
     super(props);
+
+
+
 
     this.toggle = this.toggle.bind(this);
     this.state = {
@@ -71,7 +80,7 @@ export default class NavtTabs extends React.Component {
               <Col sm="12">
 
                {/*Renderiza el contenido del tab nuevo expediente*/}
-              <TabNuevoExpediente/>
+              <AdministradorClinicas/>
 
               </Col>
             </Row>
