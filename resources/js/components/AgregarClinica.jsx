@@ -27,12 +27,29 @@ export default class TabAgregarClinica extends React.Component {
         <Row form>
           <Col md={{ size: 4, offset: 1 }}>
             <FormGroup>
-              <Label for="examplePassword">Direccion</Label>
-              <Input type="text" name="direccionClinica" bsSize="sm" id="examplePassword" placeholder="Direccion" />
+              <Label for="examplePassword">Calle Clinica</Label>
+              <Input type="text" name="calleClinica" bsSize="sm" id="examplePassword" placeholder="Direccion" />
 
             </FormGroup>
           </Col>
           <Col md={{ size: 4, offset: 1 }}>
+          <FormGroup>
+              <Label for="exampleEmail">Numero Local</Label>
+              <Input type="text" name="correoEncargado" bsSize="sm" id="exampleEmail" placeholder="Contrasenia" bsSize="sm" />
+            </FormGroup>
+                     </Col>
+        </Row>
+        <Row form>
+          <Col md={{ size: 4, offset: 1 }}>
+            <FormGroup>
+              <Label for="exampleEmail">Colonia</Label>
+              <Input type="text" name="coloniaEncargado" bsSize="sm" id="exampleEmail" placeholder="Nombre Usuario" bsSize="sm" />
+            </FormGroup>
+
+          </Col>
+
+          <Col md={{ size: 4, offset: 1 }}>
+           
             <FormGroup>
               <Label for="exampleEmail">Portafolio de servicios</Label>
               <Input type="select" name="listaServicios" id="exampleSelectMulti" multiple>
@@ -45,6 +62,7 @@ export default class TabAgregarClinica extends React.Component {
 
 
             </FormGroup>
+
           </Col>
         </Row>
         <Row form>
@@ -122,8 +140,24 @@ export default class TabAgregarClinica extends React.Component {
         <Row form>
           <Col md={{ size: 4, offset: 1 }}>
             <FormGroup>
-              <Label for="exampleEmail">Calle</Label>
+              <Label for="exampleEmail">Calle Encargado</Label>
               <Input type="text" name="calleEncargado" bsSize="sm" id="exampleEmail" placeholder="Nombre Usuario" bsSize="sm" />
+            </FormGroup>
+
+          </Col>
+
+          <Col md={{ size: 4, offset: 1 }}>
+            <FormGroup>
+              <Label for="exampleEmail">Casa</Label>
+              <Input type="text" name="casaEncargado" bsSize="sm" id="exampleEmail" placeholder="Contrasenia" bsSize="sm" />
+            </FormGroup>
+          </Col>
+        </Row>
+        <Row form>
+          <Col md={{ size: 4, offset: 1 }}>
+            <FormGroup>
+              <Label for="exampleEmail">Colonia Encargado</Label>
+              <Input type="text" name="coloniaEncargado" bsSize="sm" id="exampleEmail" placeholder="Nombre Usuario" bsSize="sm" />
             </FormGroup>
 
           </Col>
@@ -135,6 +169,8 @@ export default class TabAgregarClinica extends React.Component {
             </FormGroup>
           </Col>
         </Row>
+        
+        
         
 
 

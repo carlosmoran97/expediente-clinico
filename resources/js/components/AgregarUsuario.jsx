@@ -9,7 +9,7 @@ export default class TabAgregarUsuario extends React.Component {
 
 
 <Form>
-<h5 className="text-center">Llena los campos requeridos</h5>
+<h5 className="text-center">Agrega un usuario!</h5>
   <Row form>
     <Col md={{ size: 4, offset: 1 }}>
       <FormGroup>
@@ -34,11 +34,26 @@ export default class TabAgregarUsuario extends React.Component {
     </Col>
     <Col md={{ size: 4, offset: 1 }}>
       <FormGroup>
-        <Label for="examplePassword">Direccion</Label>
-        <Input type="text" name="direccionUsuario" bsSize="sm" id="examplePassword" placeholder="Direccion" />
+        <Label for="examplePassword">Calle</Label>
+        <Input type="text" name="calleClinica" bsSize="sm" id="examplePassword" placeholder="Direccion" />
       </FormGroup>
     </Col>
   </Row>
+  <Row form>
+          <Col md={{ size: 4, offset: 1 }}>
+            <FormGroup>
+              <Label for="examplePassword">Casa</Label>
+              <Input type="text" name="casaClinica" bsSize="sm" id="examplePassword" placeholder="Direccion" />
+
+            </FormGroup>
+          </Col>
+          <Col md={{ size: 4, offset: 1 }}>
+          <FormGroup>
+              <Label for="exampleEmail">Colonia</Label>
+              <Input type="text" name="coloniaClinica" bsSize="sm" id="exampleEmail" placeholder="Contrasenia" bsSize="sm" />
+            </FormGroup>
+                     </Col>
+        </Row>
   <Row form>
     <Col md={{ size: 4, offset: 1 }}>
       <FormGroup>

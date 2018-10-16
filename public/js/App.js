@@ -32943,7 +32943,7 @@ var Example = function (_React$Component) {
   return Example;
 }(__WEBPACK_IMPORTED_MODULE_0_react___default.a.Component);
 
-/* harmony default export */ __webpack_exports__["a"] = (Example);
+/* unused harmony default export */ var _unused_webpack_default_export = (Example);
 
 /***/ }),
 /* 40 */
@@ -37426,8 +37426,8 @@ var NavtTabs = function (_React$Component) {
               null,
               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 __WEBPACK_IMPORTED_MODULE_1_reactstrap__["b" /* Col */],
-                { sm: '4', md: { size: 3, offset: 4 } },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_11__FormLogin__["a" /* default */], null)
+                { sm: '4', md: { size: 12, offset: 0 } },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5__NuevoExpediente__["a" /* default */], null)
               )
             )
           ),
@@ -37519,7 +37519,7 @@ var TabAgregarUsuario = function (_React$Component) {
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'h5',
           { className: 'text-center' },
-          'Llena los campos requeridos'
+          'Agrega un usuario!'
         ),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           __WEBPACK_IMPORTED_MODULE_1_reactstrap__["r" /* Row */],
@@ -37579,9 +37579,41 @@ var TabAgregarUsuario = function (_React$Component) {
               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 __WEBPACK_IMPORTED_MODULE_1_reactstrap__["k" /* Label */],
                 { 'for': 'examplePassword' },
-                'Direccion'
+                'Calle'
               ),
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["j" /* Input */], { type: 'text', name: 'direccionUsuario', bsSize: 'sm', id: 'examplePassword', placeholder: 'Direccion' })
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["j" /* Input */], { type: 'text', name: 'calleClinica', bsSize: 'sm', id: 'examplePassword', placeholder: 'Direccion' })
+            )
+          )
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          __WEBPACK_IMPORTED_MODULE_1_reactstrap__["r" /* Row */],
+          { form: true },
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            __WEBPACK_IMPORTED_MODULE_1_reactstrap__["b" /* Col */],
+            { md: { size: 4, offset: 1 } },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              __WEBPACK_IMPORTED_MODULE_1_reactstrap__["i" /* FormGroup */],
+              null,
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                __WEBPACK_IMPORTED_MODULE_1_reactstrap__["k" /* Label */],
+                { 'for': 'examplePassword' },
+                'Casa'
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["j" /* Input */], { type: 'text', name: 'casaClinica', bsSize: 'sm', id: 'examplePassword', placeholder: 'Direccion' })
+            )
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            __WEBPACK_IMPORTED_MODULE_1_reactstrap__["b" /* Col */],
+            { md: { size: 4, offset: 1 } },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              __WEBPACK_IMPORTED_MODULE_1_reactstrap__["i" /* FormGroup */],
+              null,
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                __WEBPACK_IMPORTED_MODULE_1_reactstrap__["k" /* Label */],
+                { 'for': 'exampleEmail' },
+                'Colonia'
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["j" /* Input */], _defineProperty({ type: 'text', name: 'coloniaClinica', bsSize: 'sm', id: 'exampleEmail', placeholder: 'Contrasenia' }, 'bsSize', 'sm'))
             )
           )
         ),
@@ -38021,9 +38053,41 @@ var TabAgregarClinica = function (_React$Component) {
               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 __WEBPACK_IMPORTED_MODULE_1_reactstrap__["k" /* Label */],
                 { 'for': 'examplePassword' },
-                'Direccion'
+                'Calle Clinica'
               ),
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["j" /* Input */], { type: 'text', name: 'direccionClinica', bsSize: 'sm', id: 'examplePassword', placeholder: 'Direccion' })
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["j" /* Input */], { type: 'text', name: 'calleClinica', bsSize: 'sm', id: 'examplePassword', placeholder: 'Direccion' })
+            )
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            __WEBPACK_IMPORTED_MODULE_1_reactstrap__["b" /* Col */],
+            { md: { size: 4, offset: 1 } },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              __WEBPACK_IMPORTED_MODULE_1_reactstrap__["i" /* FormGroup */],
+              null,
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                __WEBPACK_IMPORTED_MODULE_1_reactstrap__["k" /* Label */],
+                { 'for': 'exampleEmail' },
+                'Numero Local'
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["j" /* Input */], _defineProperty({ type: 'text', name: 'correoEncargado', bsSize: 'sm', id: 'exampleEmail', placeholder: 'Contrasenia' }, 'bsSize', 'sm'))
+            )
+          )
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          __WEBPACK_IMPORTED_MODULE_1_reactstrap__["r" /* Row */],
+          { form: true },
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            __WEBPACK_IMPORTED_MODULE_1_reactstrap__["b" /* Col */],
+            { md: { size: 4, offset: 1 } },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              __WEBPACK_IMPORTED_MODULE_1_reactstrap__["i" /* FormGroup */],
+              null,
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                __WEBPACK_IMPORTED_MODULE_1_reactstrap__["k" /* Label */],
+                { 'for': 'exampleEmail' },
+                'Colonia'
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["j" /* Input */], _defineProperty({ type: 'text', name: 'coloniaEncargado', bsSize: 'sm', id: 'exampleEmail', placeholder: 'Nombre Usuario' }, 'bsSize', 'sm'))
             )
           ),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -38237,9 +38301,41 @@ var TabAgregarClinica = function (_React$Component) {
               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 __WEBPACK_IMPORTED_MODULE_1_reactstrap__["k" /* Label */],
                 { 'for': 'exampleEmail' },
-                'Calle'
+                'Calle Encargado'
               ),
               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["j" /* Input */], _defineProperty({ type: 'text', name: 'calleEncargado', bsSize: 'sm', id: 'exampleEmail', placeholder: 'Nombre Usuario' }, 'bsSize', 'sm'))
+            )
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            __WEBPACK_IMPORTED_MODULE_1_reactstrap__["b" /* Col */],
+            { md: { size: 4, offset: 1 } },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              __WEBPACK_IMPORTED_MODULE_1_reactstrap__["i" /* FormGroup */],
+              null,
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                __WEBPACK_IMPORTED_MODULE_1_reactstrap__["k" /* Label */],
+                { 'for': 'exampleEmail' },
+                'Casa'
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["j" /* Input */], _defineProperty({ type: 'text', name: 'casaEncargado', bsSize: 'sm', id: 'exampleEmail', placeholder: 'Contrasenia' }, 'bsSize', 'sm'))
+            )
+          )
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          __WEBPACK_IMPORTED_MODULE_1_reactstrap__["r" /* Row */],
+          { form: true },
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            __WEBPACK_IMPORTED_MODULE_1_reactstrap__["b" /* Col */],
+            { md: { size: 4, offset: 1 } },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              __WEBPACK_IMPORTED_MODULE_1_reactstrap__["i" /* FormGroup */],
+              null,
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                __WEBPACK_IMPORTED_MODULE_1_reactstrap__["k" /* Label */],
+                { 'for': 'exampleEmail' },
+                'Colonia Encargado'
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["j" /* Input */], _defineProperty({ type: 'text', name: 'coloniaEncargado', bsSize: 'sm', id: 'exampleEmail', placeholder: 'Nombre Usuario' }, 'bsSize', 'sm'))
             )
           ),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -38311,7 +38407,7 @@ var TabNuevoExpediente = function (_React$Component) {
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'h5',
           { className: 'text-center' },
-          'Llena los campos requeridos'
+          'Crea un nuevo expediente!'
         ),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           __WEBPACK_IMPORTED_MODULE_1_reactstrap__["r" /* Row */],
@@ -38371,9 +38467,41 @@ var TabNuevoExpediente = function (_React$Component) {
               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 __WEBPACK_IMPORTED_MODULE_1_reactstrap__["k" /* Label */],
                 { 'for': 'examplePassword' },
-                'Direccion'
+                'Calle'
               ),
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["j" /* Input */], { type: 'text', name: 'direccionPaciente', bsSize: 'sm', id: 'examplePassword', placeholder: 'Direccion' })
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["j" /* Input */], { type: 'text', name: 'callePaciente', bsSize: 'sm', id: 'examplePassword', placeholder: 'Direccion' })
+            )
+          )
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          __WEBPACK_IMPORTED_MODULE_1_reactstrap__["r" /* Row */],
+          { form: true },
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            __WEBPACK_IMPORTED_MODULE_1_reactstrap__["b" /* Col */],
+            { md: { size: 4, offset: 1 } },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              __WEBPACK_IMPORTED_MODULE_1_reactstrap__["i" /* FormGroup */],
+              null,
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                __WEBPACK_IMPORTED_MODULE_1_reactstrap__["k" /* Label */],
+                { 'for': 'exampleEmail' },
+                'Casa'
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["j" /* Input */], { type: 'text', name: 'casaPaciente', bsSize: 'sm', id: 'exampleEmail', placeholder: 'Nombres' })
+            )
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            __WEBPACK_IMPORTED_MODULE_1_reactstrap__["b" /* Col */],
+            { md: { size: 4, offset: 1 } },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              __WEBPACK_IMPORTED_MODULE_1_reactstrap__["i" /* FormGroup */],
+              null,
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                __WEBPACK_IMPORTED_MODULE_1_reactstrap__["k" /* Label */],
+                { 'for': 'examplePassword' },
+                'Colonia'
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["j" /* Input */], { type: 'text', name: 'coloniaPaciente', bsSize: 'sm', id: 'examplePassword', placeholder: 'Apellidos' })
             )
           )
         ),
@@ -38540,6 +38668,24 @@ var TabNuevoExpediente = function (_React$Component) {
           )
         ),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          __WEBPACK_IMPORTED_MODULE_1_reactstrap__["r" /* Row */],
+          { form: true },
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            __WEBPACK_IMPORTED_MODULE_1_reactstrap__["b" /* Col */],
+            { md: { size: 4, offset: 1 } },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              __WEBPACK_IMPORTED_MODULE_1_reactstrap__["i" /* FormGroup */],
+              null,
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                __WEBPACK_IMPORTED_MODULE_1_reactstrap__["k" /* Label */],
+                { 'for': 'exampleEmail' },
+                'Nombre Conyuge'
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_reactstrap__["j" /* Input */], { type: 'text', name: 'documentoIdentidad', bsSize: 'sm', id: 'exampleEmail', placeholder: 'Documento de identidad' })
+            )
+          )
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           __WEBPACK_IMPORTED_MODULE_1_reactstrap__["a" /* Button */],
           { size: 'sm' },
           'Crear expediente'
@@ -38551,7 +38697,7 @@ var TabNuevoExpediente = function (_React$Component) {
   return TabNuevoExpediente;
 }(__WEBPACK_IMPORTED_MODULE_0_react___default.a.Component);
 
-/* unused harmony default export */ var _unused_webpack_default_export = (TabNuevoExpediente);
+/* harmony default export */ __webpack_exports__["a"] = (TabNuevoExpediente);
 
 /***/ }),
 /* 103 */

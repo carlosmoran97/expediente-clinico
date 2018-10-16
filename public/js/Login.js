@@ -31715,7 +31715,7 @@ var Example = function (_React$Component) {
   return Example;
 }(__WEBPACK_IMPORTED_MODULE_0_react___default.a.Component);
 
-/* harmony default export */ __webpack_exports__["a"] = (Example);
+/* unused harmony default export */ var _unused_webpack_default_export = (Example);
 
 /***/ }),
 

@@ -76,12 +76,14 @@ export default class NavtTabs extends React.Component {
 
         {/*CONTENIDOS DE LA TAB 1*/}
         <TabContent activeTab={this.state.activeTab}>
+        
           <TabPane tabId="1">
+            
             <Row>
-              <Col sm="4" md={{ size: 3, offset: 4 }}>
+              <Col sm="4" md={{ size: 12, offset: 0 }}>
 
                {/*Renderiza el contenido del tab nuevo expediente*/}
-              <FormLogin/>
+              <TabNuevoExpediente/>
 
               </Col>
             </Row>
