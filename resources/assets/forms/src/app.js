@@ -1,12 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import App from './components/App';
 
-console.log(user);
 
-const jsx = (
-    <div>
-        <h1>This is from my react App!</h1>
-    </div>
-);
-
-ReactDOM.render(jsx, document.getElementById('app'));
+ReactDOM.render(<App />, document.getElementById('app'));

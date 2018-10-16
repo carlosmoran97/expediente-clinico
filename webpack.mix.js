@@ -25,4 +25,5 @@ mix
         'resources/assets/plantilla/js/pace.min.js',
         'resources/assets/plantilla/js/template.js'
     ], 'public/js/plantilla.js')
-    .react('resources/assets/forms/src/app.js', 'public/js/app.js');
+    .react('resources/assets/forms/src/app.js', 'public/js/app.js')
+    .sass('resources/assets/forms/src/style/app.scss', 'public/css/plantilla.css');
