@@ -35,6 +35,6 @@ class User extends Authenticatable
     }
 
     public function persona(){
-        return $this->belongsTo('App\Persona', 'persona_id');
+        return $this->belongsTo('App\Persona', 'id');
     }
 }

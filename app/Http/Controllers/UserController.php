@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\User;
+use App\Persona;
+use App\Rol;
 
 class UserController extends Controller
 {
@@ -47,8 +49,8 @@ class UserController extends Controller
     {
         try{
             DB::beginTransaction();
-            $persona = App\Persona::findOrFail($request->persona_id);
-            $rol = App\Rol::findOrFail($request->rol_id);
+            $persona = Persona::findOrFail($request->persona_id);
+            $rol = Rol::findOrFail($request->rol_id);
 
             $user = new User();
             $user->usuario = $request->usuario;
@@ -99,8 +101,8 @@ class UserController extends Controller
     {
         try{
             DB::beginTransaction();
-            $persona = App\Persona::findOrFail($request->persona_id);
-            $rol = App\Rol::findOrFail($request->rol_id);
+            $persona = Persona::findOrFail($request->persona_id);
+            $rol = Rol::findOrFail($request->rol_id);
 
             $user = User::findOrFail($request->id);
             $user->usuario = $request->usuario;
