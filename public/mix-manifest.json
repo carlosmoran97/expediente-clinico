@@ -1,9 +1,4 @@
 {
-    "/js/App.js": "/js/App.js",
-    "/css/estilos-base.css": "/css/estilos-base.css",
-    "/css/expediente-clinico.css": "/css/expediente-clinico.css",
-    "/css/panel-admin.css": "/css/panel-admin.css",
-    "/css/panel-registro-consulta.css": "/css/panel-registro-consulta.css",
-    "/css/panel-superusuario.css": "/css/panel-superusuario.css",
-    "/js/Login.js": "/js/Login.js"
+    "/css/plantilla.css": "/css/plantilla.css",
+    "/js/plantilla.js": "/js/plantilla.js"
 }
